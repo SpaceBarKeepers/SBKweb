@@ -1,0 +1,7 @@
+@import './sass/colors.scss';
+
+body {
+  @media (max-width: 600px) {
+    background-color: $raspberry;
+  }
+}
