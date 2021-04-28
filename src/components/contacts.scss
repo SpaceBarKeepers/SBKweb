@@ -1,0 +1,21 @@
+@import '../sass/colors.scss';
+@import '../sass/variables.scss';
+
+.contacts_div {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.table {
+  height: 80%;
+  width: 100;
+  background-image: url('../images/graphics/table_mobile.png');
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center;
+}
+.contactsDetails {
+  height: 20%;
+}
