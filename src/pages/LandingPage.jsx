@@ -1,15 +1,11 @@
 import React from 'react';
-import { Main } from '../components/Main.jsx';
-import { References } from '../components/References.jsx';
-import { Contacts } from '../components/Contacts.jsx';
+import { Home } from '../components/Home/Home.jsx';
 import './landingPage.scss';
 
 export const LandingPage = () => {
   return (
     <div className="landingPage_div">
-      <Main />
-      <References />
-      <Contacts />
+      <Home />
     </div>
   );
 };

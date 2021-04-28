@@ -1,0 +1,68 @@
+@import '../../sass/_colors';
+@import '../../sass/_variables';
+@import '../../sass/_typography';
+
+.home_div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header_div {
+  height: 80%;
+  position: relative;
+  @media (max-width: 600px) {
+    background-image: url('../../images/graphics/bar_mobile_nochairs.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
+.logo {
+  width: 40%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.menu {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 $spacing/2;
+  &_left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &_right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &_buttons {
+    font-family: $headers;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $shelf;
+    padding-top: $spacing;
+    cursor: pointer;
+  }
+}
+
+.chairs {
+  @media (max-width: 600px) {
+    background-image: url('../../images/graphics/chairs_mobile_bck.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
+.main {
+  height: 600px;
+}
