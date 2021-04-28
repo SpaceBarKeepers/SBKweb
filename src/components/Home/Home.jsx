@@ -11,12 +11,9 @@ export const Home = () => {
   return (
     <div className="home_div">
       <div className="header_div">
-        <img
-          src={logo}
-          alt="logo spacebarkeepers"
-          className="logo"
-          onClick={(e) => setActiveSection('home')}
-        />
+        <div onClick={(e) => setActiveSection('home')}>
+          <img src={logo} alt="logo spacebarkeepers" className="logo" />
+        </div>
         <div className="menu">
           <div className="menu_left">
             <div
