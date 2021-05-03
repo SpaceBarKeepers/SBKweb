@@ -1,72 +1,13 @@
-import React, { useState } from 'react';
-import logo from '../../images/logo/white_long.svg';
-import { Products } from '../Products/Products';
-import { References } from '../References/References';
-import { Contacts } from '../Contacts/Contacts';
+import React from 'react';
+import barGraphics from '../../images/graphics/bar_mobile.png';
 import './home.scss';
 
 export const Home = () => {
-  const [activeSection, setActiveSection] = useState('home');
-
   return (
-    <div className="home_div">
-      <div className="header_div">
-        <div onClick={(e) => setActiveSection('home')}>
-          <img src={logo} alt="logo spacebarkeepers" className="logo" />
-        </div>
-        <div className="menu">
-          <div className="menu_left">
-            <div
-              className={
-                activeSection === 'products'
-                  ? 'active_button menu_buttons'
-                  : 'menu_buttons'
-              }
-              onClick={(e) => setActiveSection('')}
-            >
-              Produkty
-            </div>
-            <div
-              className={
-                activeSection === 'references'
-                  ? 'active_button menu_buttons'
-                  : 'menu_buttons'
-              }
-              onClick={(e) => setActiveSection('')}
-            >
-              Reference
-            </div>
-          </div>
-          <div className="menu_right">
-            <div
-              className={
-                activeSection === 'about'
-                  ? 'active_button menu_buttons'
-                  : 'menu_buttons'
-              }
-              onClick={(e) => setActiveSection('')}
-            >
-              O nás
-            </div>
-            <div
-              className={
-                activeSection === 'contacts'
-                  ? 'active_button menu_buttons'
-                  : 'menu_buttons'
-              }
-              onClick={(e) => setActiveSection('')}
-            >
-              Kontakty
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="main">
-        {activeSection === 'home' ? <div className="chairs"></div> : null}
-        {activeSection === 'products' ? <Products /> : null}
-        {activeSection === 'references' ? <References /> : null}
-        {activeSection === 'contacts' ? <Contacts /> : null}
-      </div>
-    </div>
+    <img
+      src={barGraphics}
+      alt="bar and kosmonauts graphics"
+      className="graphics_home"
+    />
   );
 };
