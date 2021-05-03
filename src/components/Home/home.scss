@@ -1,69 +1,26 @@
-@import '../../sass/_colors';
-@import '../../sass/_variables';
-@import '../../sass/_typography';
-
-.home_div {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.header_div {
-  height: 80%;
-  position: relative;
-  @media (max-width: 600px) {
-    background-image: url('../../images/graphics/bar_mobile_nochairs.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
-}
-
-.logo {
-  width: 40%;
+.graphics_chairs_mobile {
+  min-height: 690px;
+  min-width: 100%;
+  z-index: -2;
+  background-image: url('../../images/graphics/bar_mobile.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
+  top: -100%;
+}
+
+.graphics_home {
+  min-height: 100%;
+  min-width: 350px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
   left: 0;
-  right: 0;
-  cursor: pointer;
-}
-
-.menu {
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 $spacing/2;
-  &_left {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  z-index: -1;
+  margin: 0 auto;
+  @media (max-width: 350px) {
+    left: 50%;
+    margin-left: -175px;
   }
-  &_right {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  &_buttons {
-    font-family: $headers;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: $shelf;
-    padding-top: $spacing;
-    cursor: pointer;
-  }
-}
-
-.chairs {
-  @media (max-width: 600px) {
-    background-image: url('../../images/graphics/chairs_mobile_bck.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
-}
-
-.main {
-  height: 600px;
 }

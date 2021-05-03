@@ -1,0 +1,59 @@
+@import '../../sass/_colors';
+@import '../../sass/_variables';
+@import '../../sass/_typography';
+
+.header_div {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoMenu_div {
+  height: 80%;
+  position: relative;
+}
+
+.logo {
+  width: 40%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 20px;
+  right: 0px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.menu {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 $spacing/2;
+  &_left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &_right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &_buttons {
+    font-family: $headers;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $shelf;
+    padding-top: $spacing;
+    cursor: pointer;
+  }
+}
+
+.main {
+  height: 450px;
+  width: 100%;
+  position: absolute;
+  top: 418px;
+}

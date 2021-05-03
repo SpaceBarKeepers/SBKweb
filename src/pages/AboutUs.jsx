@@ -1,5 +1,5 @@
 import React from 'react';
 
 export const AboutUs = () => {
-  return <div></div>;
+  return <div>O nás</div>;
 };
