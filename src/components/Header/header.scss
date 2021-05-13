@@ -41,14 +41,7 @@
     flex-direction: column;
     align-items: flex-end;
   }
-  &_buttons {
-    font-family: $headers;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: $shelf;
-    padding-top: $spacing;
-    cursor: pointer;
-  }
+  
 }
 
 .main {
