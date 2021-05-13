@@ -8,6 +8,7 @@ import { About } from '../About/About';
 import { Graphics } from '../Graphics/Graphics';
 
 import './header.scss';
+import MenuButton from '../MenuButton/MenuButton';
 
 export const Header = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -20,48 +21,12 @@ export const Header = () => {
         </a>
         <div className="menu">
           <div className="menu_left">
-            <div
-              className={
-                activeSection === 'products'
-                  ? 'active_button menu_buttons'
-                  : 'menu_buttons'
-              }
-              onClick={(e) => setActiveSection('products')}
-            >
-              Produkty
-            </div>
-            <div
-              className={
-                activeSection === 'references'
-                  ? 'active_button menu_buttons'
-                  : 'menu_buttons'
-              }
-              onClick={(e) => setActiveSection('references')}
-            >
-              Reference
-            </div>
+            <MenuButton buttonRoute="products" buttonName="Produkty" />
+            <MenuButton buttonRoute="references" buttonName="Reference" />
           </div>
           <div className="menu_right">
-            <div
-              className={
-                activeSection === 'about'
-                  ? 'active_button menu_buttons'
-                  : 'menu_buttons'
-              }
-              onClick={(e) => setActiveSection('about')}
-            >
-              O nás
-            </div>
-            <div
-              className={
-                activeSection === 'contacts'
-                  ? 'active_button menu_buttons'
-                  : 'menu_buttons'
-              }
-              onClick={(e) => setActiveSection('contacts')}
-            >
-              Kontakty
-            </div>
+            <MenuButton buttonRoute="aboutus" buttonName="O nás" />
+            <MenuButton buttonRoute="contacts" buttonName="Kontakty" />
           </div>
         </div>
       </div>
@@ -75,7 +40,7 @@ export const Header = () => {
         ) : null}
         {activeSection === 'references' ? (
           <>
-            <Graphics /> 
+            <Graphics />
             <References />
           </>
         ) : null}

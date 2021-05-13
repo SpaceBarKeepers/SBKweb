@@ -1,0 +1,12 @@
+@import '../../sass/_colors';
+@import '../../sass/_variables';
+@import '../../sass/_typography';
+
+.menu_buttons {
+  font-family: $headers;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: $shelf;
+  padding-top: $spacing;
+  cursor: pointer;
+}
