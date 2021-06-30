@@ -3,10 +3,7 @@
 @import '../../sass/_typography';
 
 .menu_buttons {
-  font-family: $headers;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: $shelf;
-  padding-top: $spacing;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
 }

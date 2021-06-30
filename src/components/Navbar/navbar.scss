@@ -1,0 +1,11 @@
+.navbar_mobile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100%;
+  bottom: 8px;
+}
