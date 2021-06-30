@@ -2,7 +2,7 @@
 @import '../../sass/_variables';
 @import '../../sass/_typography';
 
-.header_div {
+.header_div_mobile {
   display: flex;
   flex-direction: column;
 }
@@ -21,32 +21,4 @@
   right: 0px;
   top: 5px;
   cursor: pointer;
-}
-
-.menu {
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 $spacing/2;
-  &_left {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  &_right {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  
-}
-
-.main {
-  height: 450px;
-  width: 100%;
-  position: absolute;
-  top: 418px;
 }

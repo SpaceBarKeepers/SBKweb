@@ -1,10 +1,11 @@
-/* import React, { useHistory } from 'react';
+import React from 'react';
+import { useHistory } from 'react-router-dom';
 import './menuButton.scss';
 
 function MenuButton(props) {
-  let history = useHistory;
+  const { push } = useHistory();
   const handleClick = () => {
-    history.push(`/${props.buttonRoute}`);
+    push(`/${props.buttonRoute}`);
   };
 
   return (
@@ -15,4 +16,3 @@ function MenuButton(props) {
 }
 
 export default MenuButton;
- */
