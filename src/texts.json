@@ -1,0 +1,10 @@
+{
+  "aboutUs": {
+    "mainText": "Jsme Bára a Karel a na začátku roku 2021 jsme založili Space Bar Keepers, vývojářský kolektiv zaměřující se na webové aplikace a prezentace. Máme rádi moderní jazyky a technologie a rádi si navrhujeme vlastní designy i technická řešení.",
+    "bara": "Bára má za sebou letité zkušenosti z obchodnické branže, během rodičovské dovolené se ale rozhodla pro změnu a absolvovala Digitální akademii: Web od Czechitas, kde se zamilovala do Reactu a frontendového vývoje. Bára má silné vizuální cítění a smysl pro neotřelé nápady. Dále studuje UX Design a SEO, ráda běhá a ???.",
+    "karel": "Karel se také téměř dekádu pohyboval v obchodnickém prostředí, ačkoliv na analytických pozicích. Jeho změna profesního oboru směrem k webovému a softwarovému vývoji byla plánovaná delší dobu. Karel má nadání pro řešení problémů a smysl pro detail. Dále studuje zabezpečení IT systémů, rád se toulá přírodou a čte."
+  },
+  "products": {
+    "mainText": "Svým zákazníkům nabízíme webové prezentace a webové aplikace na klíč od prvotního designu až po nasazení a provozní správu. Využíváme nejnovější technilogie a trendy, vyznačujeme se otevřenou komunikací a proaktivním přístupem. Weby nás baví! Pojďme se pobavit i o vašem webu!"
+  }
+}
