@@ -7,7 +7,7 @@ export const Header = () => {
   return (
     <div className="header_div_mobile">
       <div className="logoMenu_div">
-        <a href="/home">
+        <a href="/">
           <img src={logo} alt="logo spacebarkeepers" className="logo" />
         </a>
       </div>

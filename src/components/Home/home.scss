@@ -1,23 +1,13 @@
 .homeSection {
   height: 100vh;
-  width: 100vw;
-  /*   background-image: url(../../images/graphics/bar_mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top; */
-}
-.graphics_home {
-  min-height: 100%;
-  min-width: 350px;
-  width: 100%;
-  height: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  margin: 0 auto;
-  @media (max-width: 350px) {
-    left: 50%;
-    margin-left: -175px;
+  background-position: top;
+  background-image: url('../../images/graphics/bar_mobile.png');
+  @media (min-width: 500px) {
+    background-image: url('../../images/graphics/tablet.png');
+  }
+  @media (min-width: 1100px) {
+    background-image: url('../../images/graphics/desktop.png');
   }
 }
