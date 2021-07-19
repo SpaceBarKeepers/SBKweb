@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { Header } from '../../components/Header/Header';
 import Navbar from '../../components/Navbar/Navbar';
 import greenChairs from '../../images/graphics/greenChairs.svg';
@@ -6,7 +7,7 @@ import './references.scss';
 
 function References() {
   return (
-    <section className="references_section">
+    <motion.div className="references_section">
       <Header />
       <Navbar />
       <h1>Reference</h1>
@@ -17,7 +18,7 @@ function References() {
       ></div>
       <div className="references_purple"></div>
       <div className="references_pink"></div>
-    </section>
+    </motion.div>
   );
 }
 
