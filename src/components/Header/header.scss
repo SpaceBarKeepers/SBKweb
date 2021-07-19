@@ -5,6 +5,9 @@
 .header_div_mobile {
   display: flex;
   flex-direction: column;
+  @media (min-width: 500px) {
+    display: none;
+  }
 }
 
 .logoMenu_div {

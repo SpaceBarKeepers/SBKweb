@@ -1,6 +1,6 @@
 import React from 'react';
 import blueChairs from '../../images/graphics/blueChairs.svg';
-
+import Navbar from '../../components/Navbar/Navbar';
 import { Header } from '../../components/Header/Header';
 import './whatWeDo.scss';
 
@@ -8,6 +8,7 @@ function WhatWeDo() {
   return (
     <section className="whatWeDo_section">
       <Header />
+      <Navbar />
       <h1>Co nabízíme</h1>
       <div className="wwd_bar"></div>
       <div

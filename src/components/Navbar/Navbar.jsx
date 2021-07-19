@@ -5,30 +5,59 @@ import astronaut from '../../images/icons/astronaut.svg';
 import home from '../../images/icons/home.svg';
 import contact from '../../images/icons/contact.svg';
 import references from '../../images/icons/references.svg';
+import logo from '../../images/logo/white_long.svg';
 import products from '../../images/icons/products.svg';
 import './navbar.scss';
 
 function Navbar() {
   const { push } = useHistory();
   return (
-    <section className="navbar_mobile">
+    <section className="navbar">
       <MenuButton
-        buttonName={<img src={home} alt="ikona domu" />}
+        buttonName={
+          <>
+            <img className="menuIcon" src={home} alt="ikona domu" />
+            <img className="menuLogo" src={logo} alt="logo" />
+          </>
+        }
         handleClick={() => push('/')}
       />
       <MenuButton
-        buttonName={<img src={products} alt="ikona ruky" />}
+        buttonName={
+          <>
+            {' '}
+            <img className="menuIcon" src={products} alt="ikona ruky" />
+            <p className="menuBtnName">Co děláme</p>{' '}
+          </>
+        }
         handleClick={() => push('/codelame')}
       />
       <MenuButton
-        buttonName={<img src={references} alt="ikona konverzace" />}
+        buttonName={
+          <>
+            <img className="menuIcon" src={references} alt="ikona konverzace" />
+            <p className="menuBtnName">Reference</p>
+          </>
+        }
         handleClick={() => push('/reference')}
       />
       <MenuButton
-        buttonName={<img src={astronaut} alt="ikona astronauta" />}
+        buttonName={
+          <>
+            <img className="menuIcon" src={astronaut} alt="ikona astronauta" />
+            <p className="menuBtnName">O nás</p>
+          </>
+        }
         handleClick={() => push('/onas')}
       />
-      <MenuButton buttonName={<img src={contact} alt="ikona zprávy" />} />
+      <MenuButton
+        buttonName={
+          <>
+            <img className="menuIcon" src={contact} alt="ikona zprávy" />
+            <p className="menuBtnName">Kontakt</p>
+          </>
+        }
+      />
     </section>
   );
 }

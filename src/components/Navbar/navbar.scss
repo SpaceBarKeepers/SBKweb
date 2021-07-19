@@ -1,4 +1,6 @@
-.navbar_mobile {
+@import '../../sass/colors';
+@import '../../sass/typography';
+.navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -8,4 +10,31 @@
   position: sticky;
   top: 100%;
   bottom: 8px;
+  @media (min-width: 500px) {
+    background-color: $black;
+    top: 0;
+    height: auto;
+  }
+}
+.menuIcon {
+  @media (min-width: 500px) {
+    display: none;
+  }
+}
+
+.menuBtnName {
+  display: none;
+  @media (min-width: 500px) {
+    display: flex;
+    color: $white;
+    text-transform: uppercase;
+    font-family: $headers;
+  }
+}
+.menuLogo {
+  display: none;
+  @media (min-width: 500px) {
+    display: block;
+    height: 40px;
+  }
 }
