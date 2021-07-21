@@ -8,15 +8,15 @@
 .aboutUs_graphics {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  min-height: 70vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
   background-image: url('../../images/graphics/bar_mobile_nochairs.png');
   @media (min-width: 500px) {
-    background-image: url('../../images/graphics/tablet.png');
+    background-image: url('../../images/graphics/TabletNochairs.png');
   }
 }
 .aboutUs_main {
-  height: 50%;
+  height: 20vh;
 }

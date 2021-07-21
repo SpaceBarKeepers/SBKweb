@@ -5,9 +5,11 @@
   background-position: top;
   background-image: url('../../images/graphics/bar_mobile.png');
   @media (min-width: 500px) {
-    background-image: url('../../images/graphics/tablet.png');
+    background-image: url('../../images/graphics/Tablet2.png');
   }
   @media (min-width: 1100px) {
-    background-image: url('../../images/graphics/desktop.png');
+    height: auto;
+    width: 100vw;
+    background-image: url('../../images/graphics/RaketaNosign.png');
   }
 }

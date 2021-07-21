@@ -8,11 +8,11 @@ function AboutUs() {
   return (
     <motion.div className="aboutUs_section">
       <Header />
-      <Navbar />
       <div className="aboutUs_graphics" alt="spacebarkeepers grafika"></div>
       <div className="aboutUs_main">
         <h1>O nás</h1>
-      </div>
+      </div>{' '}
+      <Navbar />
     </motion.div>
   );
 }

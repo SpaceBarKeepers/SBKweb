@@ -9,7 +9,6 @@ function References() {
   return (
     <motion.div className="references_section">
       <Header />
-      <Navbar />
       <h1>Reference</h1>
       <div className="references_bar"></div>
       <div
@@ -17,7 +16,8 @@ function References() {
         style={{ backgroundImage: `url(${greenChairs})` }}
       ></div>
       <div className="references_purple"></div>
-      <div className="references_pink"></div>
+      <div className="references_pink"></div> 
+      <Navbar />
     </motion.div>
   );
 }
