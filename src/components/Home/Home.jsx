@@ -4,9 +4,7 @@ import './home.scss';
 
 export const Home = () => {
   return (
-    <section
-      className="homeSection"
-    >
+    <section className="homeSection">
       <Navbar />
     </section>
   );

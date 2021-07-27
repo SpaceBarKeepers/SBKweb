@@ -8,7 +8,7 @@ export const LandingPage = () => {
   return (
     <motion.div className="landingPage_div">
       <Header />
-      <Home />
-    </motion.div>
+{      <Home />
+}    </motion.div>
   );
 };

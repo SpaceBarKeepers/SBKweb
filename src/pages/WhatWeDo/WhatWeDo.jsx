@@ -1,5 +1,4 @@
 import React from 'react';
-import blueChairs from '../../images/graphics/blueChairs.svg';
 import { motion } from 'framer-motion';
 import Navbar from '../../components/Navbar/Navbar';
 import { Header } from '../../components/Header/Header';
@@ -15,12 +14,12 @@ function WhatWeDo() {
     >
       <Header />
       <Navbar />
-      <h1>Co nabízíme</h1>
+      <h1>O nás</h1>
       <div className="wwd_bar"></div>
-      <div
+      {/* <div
         className="wwd_chairs"
         style={{ backgroundImage: `url(${blueChairs})` }}
-      ></div>
+      ></div> */}
       <div className="whatWeDo_purple"></div>
       <div className="whatWeDo_pink"></div>
     </motion.div>
