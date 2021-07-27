@@ -8,9 +8,8 @@ import light from '../../images/graphics/Light.png';
 import './references.scss';
 
 const referencesVariants = {
-  hidden: { opacity: 0, x: '-100vw' },
+  hidden: { x: '-100vw' },
   visible: {
-    opacity: 1,
     x: 0,
     transition: { duration: 0.5, type: 'tween' },
   },
