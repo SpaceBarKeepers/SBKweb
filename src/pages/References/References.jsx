@@ -24,7 +24,8 @@ function References() {
       exit="hidden"
       className="references_section"
     >
-      <Header />
+      <Header />      <Navbar />
+
       <h1>Reference</h1>
       <div className="references_bar"></div>
       <div>
@@ -37,9 +38,6 @@ function References() {
         className="references_chairs"
         style={{ backgroundImage: `url(${chairsProjector})` }}
       ></div>
-      <div className="references_purple"></div>
-      <div className="references_pink"></div>
-      <Navbar />
     </motion.div>
   );
 }

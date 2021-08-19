@@ -4,11 +4,14 @@
   margin: 0 auto;
   height: 100vh;
   background: linear-gradient(180deg, $purple 80%, $raspberry 80%);
+  @media (min-width: 500px) {
+    background: none;
+  }
 }
 
 .wwd_bar {
   position: absolute;
-  width: 90px;
+  width: 45px;
   height: 200px;
   background-repeat: no-repeat;
   background-position: center;
@@ -19,7 +22,7 @@
   @media (min-width: 500px) {
     background-image: url('../../images/graphics/Tabetbar.png');
     height: 400px;
-    width: 180px;
+    width: 90px;
     top: 35%;
   }
   @media (min-width: 1100px) {

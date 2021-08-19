@@ -10,18 +10,20 @@ function App() {
   return (
     <AnimatePresence exitBeforeEnter>
       <Switch>
-        <Route exact path="/">
+        {' '}
+        <Route path="/">
           <LandingPage />
+        </Route>  
+        <Route path="/onas">
+          <AboutUs />
         </Route>
         <Route path="/codelame">
           <WhatWeDo />
         </Route>
         <Route path="/reference">
           <References />
-        </Route>
-        <Route path="/onas">
-          <AboutUs />
-        </Route>
+        </Route>{' '}
+      
       </Switch>
     </AnimatePresence>
   );
