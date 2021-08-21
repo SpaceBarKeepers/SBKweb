@@ -3,8 +3,10 @@
 .aboutUs_section {
   max-width: 1500px;
   margin: 0 auto;
-  height: 100vh;
   background: linear-gradient(180deg, $purple 80%, $raspberry 80%);
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
   @media (min-width: 500px) {
     background: none;
   }
@@ -38,9 +40,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  bottom: 0px;
+  bottom: 30px;
   right: 10px;
   @media (min-width: 500px) {
+    bottom: 0;
     width: 300px;
     height: 300px;
   }
@@ -58,6 +61,7 @@
   background-size: cover;
   left: 50%;
   margin-left: -100px;
+  overflow: hidden;
   @media (min-width: 500px) {
     width: 300px;
     height: 300px;

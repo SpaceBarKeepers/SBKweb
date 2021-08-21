@@ -15,15 +15,15 @@ const aboutUsVariants = {
   },
 };
 
-/* const windowVariants = {
-  hidden: { scale: 0 },
-  visible: {
-    scale: 5,
-    originX: '50%',
-    originY: '40%',
-    transition: { duration: 1 },
+const windowVariants = {
+  hover: {
+    scale: 1.5,
+    transition: {
+      yoyo: 5,
+      duration: 0.5,
+    },
   },
-}; */
+};
 
 function AboutUs() {
   const { push } = useHistory();
@@ -46,8 +46,9 @@ function AboutUs() {
       <motion.div
         className="aboutUs_window"
         style={{ backgroundImage: `url(${window})` }}
-/*         variants={windowVariants}
- */        onClick={() => push('/onas/informace')}
+        variants={windowVariants}
+        whileHover="hover"
+        onClick={() => push('/onas/informace')}
       ></motion.div>
     </motion.div>
   );
