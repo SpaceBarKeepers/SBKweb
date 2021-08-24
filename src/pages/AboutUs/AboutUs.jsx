@@ -38,18 +38,19 @@ function AboutUs() {
       <Header />
       <Navbar />
       <h1>O nás</h1>
-      <div className="aboutUs_bar"></div>
-      <div
-        className="aboutUs_chairs"
-        style={{ backgroundImage: `url(${chairsAboutUs})` }}
-      ></div>
-      <motion.div
-        className="aboutUs_window"
-        style={{ backgroundImage: `url(${window})` }}
-        variants={windowVariants}
-        whileHover="hover"
-        onClick={() => push('/onas/informace')}
-      ></motion.div>
+      <div className="graphics">
+        <div
+          className="aboutUs_chairs"
+          style={{ backgroundImage: `url(${chairsAboutUs})` }}
+        ></div>
+        <motion.div
+          className="aboutUs_window"
+          style={{ backgroundImage: `url(${window})` }}
+          variants={windowVariants}
+          whileHover="hover"
+          onClick={() => push('/onas/informace')}
+        ></motion.div>
+      </div>
     </motion.div>
   );
 }
