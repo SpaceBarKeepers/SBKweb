@@ -12,6 +12,7 @@
   bottom: 8px;
   max-width: 1500px;
   margin: 0 auto;
+  z-index: 3;
   @media (min-width: 500px) {
     background-color: $black;
     top: 0;
