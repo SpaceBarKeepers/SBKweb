@@ -9,7 +9,6 @@ import { About } from './components/About/About';
 import { Contacts } from './components/Contacts/Contacts';
 import ContactPage from './pages/ContactPage/ContactPage';
 import InitialDesktop from './pages/InitialDesktop/InitialDesktop';
-import Desktop from './pages/Desktop/Desktop';
 
 function App() {
   const location = useLocation();

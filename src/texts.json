@@ -4,7 +4,24 @@
     "bara": "Bára má za sebou letité zkušenosti z obchodnické branže, během rodičovské dovolené se ale rozhodla pro změnu a absolvovala Digitální akademii: Web od Czechitas, kde se zamilovala do Reactu a frontendového vývoje. Bára má silné vizuální cítění a smysl pro neotřelé nápady. Dále studuje UX Design a SEO, ráda běhá a vaří.",
     "karel": "Kája se také téměř dekádu pohyboval v obchodnickém prostředí, ačkoliv na analytických pozicích. Jeho změna profesního oboru směrem k webovému a softwarovému vývoji byla plánovaná delší dobu. Kája má nadání pro řešení problémů a smysl pro detail. Dále studuje zabezpečení IT systémů, rád se toulá přírodou a čte."
   },
-  "products": {
-    "mainText": "Svým zákazníkům nabízíme webové prezentace a webové aplikace na klíč od prvotního designu až po nasazení a provozní správu. Využíváme nejnovější technologie a trendy, vyznačujeme se otevřenou komunikací a proaktivním přístupem. Weby nás baví! Pojďme se pobavit i o vašem webu!"
+  "whatWeDo": {
+    "mainText": "Svým zákazníkům nabízíme webové prezentace a webové aplikace na klíč od prvotního designu až po nasazení a provozní správu. Využíváme nejnovější technologie a trendy, vyznačujeme se otevřenou komunikací a proaktivním přístupem. Weby nás baví! Pojďme se pobavit i o vašem webu!",
+    "mainIngredients": {
+      "designNaMiru": "Nechceme, aby Váš web vypadal, jako web Vašeho souseda.",
+      "responzivniWeb": "Mobil nebo PeCko - zobrazíme všecko.",
+      "optimalizaceWebu": "Rychlý a spolehlivý web díky nejmodernějším technologiím.",
+      "adminProstrediNaMiru": "Zapomeňte na Wordpress. Zvolte cestu jednoduchosti a moderního designu.",
+      "uzivatelskaZkusenost": "Postaráme se o to, aby uživatelé měli Váš web rádi.",
+      "individualniPristup": "Celým procesem tvorby webu procházíme společně!"
+    },
+    "somethingExtra": {
+      "branding": "Nakreslíme grafické prvky v souladu s identitou Vaší značky nebo vytvoříme zcela novou.",
+      "spravaWebu": "Postaráme se o to, aby Váš web byl stále aktuální.",
+      "spravaHostingovychSluzeb": "S námi musíte ani vědět, co to je hosting.",
+      "nastaveniSEO": "Nenecháme Váš web zapadnout v hlubinách internetu!",
+      "obchodniZkusenosti": "Společně vytvoříme web, který prodává.",
+      "analytickeZkusenosti": "Hromady dat nám nejsou cizí. Rádi Vám pomůžeme s jejich vizualizací.",
+      "plus": "přísada dle Vašeho výběru"
+    }
   }
 }

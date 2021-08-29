@@ -1,0 +1,56 @@
+@import '../../sass/colors.scss';
+@import '../../sass/typography.scss';
+
+.menu {
+  background-color: $white;
+  color: $black;
+  padding: 50px 100px;
+  &_header {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+  }
+  &_title {
+    font-size: 72px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 0;
+    flex-basis: 60%;
+    font-weight: 900;
+  }
+  &_mainText {
+    flex-basis: 35%;
+  }
+  &_main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    & h3 {
+      text-transform: uppercase;
+      font-size: 48px;
+      font-weight: 500;
+    }
+  }
+  &_mainIngredients,
+  &_somethingExtra {
+    padding: 24px 50px;
+    flex-basis: 40%;
+    & h4 {
+      font-size: 18px;
+      font-family: $headers;
+      font-weight: 700;
+      margin: 24px 0 8px 0;
+    }
+    & p {
+      margin: 0;
+    }
+    & div {
+      padding-bottom: 12px;
+      border-bottom: 1px dotted $yellow;
+    }
+  }
+  &_mainIngredients {
+    border-right: 0.5px solid $black;
+  }
+}
