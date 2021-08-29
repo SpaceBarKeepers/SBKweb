@@ -133,9 +133,9 @@ function References() {
             />
           </Carousel>
         </div>
-        <div>
+       {/*  <div>
           <img className="projectorLight" src={light} alt="" />
-        </div>
+        </div> */}
         <div
           className="references_chairs"
           style={{ backgroundImage: `url(${chairsProjector})` }}

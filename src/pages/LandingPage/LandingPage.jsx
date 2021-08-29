@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Home } from '../../components/Home/Home.jsx';
 import { Header } from '../../components/Header/Header.jsx';
 import { motion } from 'framer-motion';
-import { Contacts } from '../../components/Contacts/Contacts';
 import './landingPage.scss';
 
 /* const homeVariants = {
@@ -11,7 +10,6 @@ import './landingPage.scss';
 }; */
 
 export const LandingPage = () => {
-  const [contactVisible, setContactVisible] = useState(false);
 
   return (
     <motion.div
@@ -23,11 +21,7 @@ export const LandingPage = () => {
     >
       {' '}
       <Header />
-      {contactVisible === false ? (
-        <Home />
-      ) : (
-        <Contacts setContactVisible={setContactVisible(true)} />
-      )}
+      <Home />
     </motion.div>
   );
 };

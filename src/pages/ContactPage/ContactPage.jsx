@@ -6,7 +6,8 @@ function ContactPage() {
   return (
     <>
       <Navbar />
-      <div>IČ ADRESA kontakty Kája kontakty Bára</div>
+      <div>Kája: IČ, Telefon, email, adresa, web</div>
+      <div>Bára: IČ, TELEFON, email, adresa, web </div>
     </>
   );
 }

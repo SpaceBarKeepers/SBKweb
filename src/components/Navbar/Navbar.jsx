@@ -9,7 +9,7 @@ import logo from '../../images/logo/white_long.svg';
 import products from '../../images/icons/products.png';
 import './navbar.scss';
 
-function Navbar({ setContactVisible }) {
+function Navbar() {
   const { push } = useHistory();
   return (
     <section className="navbar">
@@ -57,7 +57,7 @@ function Navbar({ setContactVisible }) {
             <p className="menuBtnName">Kontakt</p>
           </>
         }
-        handleClick={setContactVisible}
+        handleClick={() => push('/kontakty')}
       />
     </section>
   );

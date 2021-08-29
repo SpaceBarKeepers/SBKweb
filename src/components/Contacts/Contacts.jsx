@@ -1,15 +1,19 @@
 import React from 'react';
 import { useHistory } from 'react-router';
+import { Header } from '../../components/Header/Header.jsx';
+
 import Navbar from '../Navbar/Navbar';
 import './contacts.scss';
 
-export const Contacts = ({ setContactVisible }) => {
+export const Contacts = () => {
   const { push } = useHistory();
 
   return (
     <>
       <section className="contacts_section">
-        <Navbar setContactVisible={setContactVisible} />
+        <Header />
+
+        <Navbar />
         <div className="contacts_div"> </div>
         <div className="contact_details">
           <div>
