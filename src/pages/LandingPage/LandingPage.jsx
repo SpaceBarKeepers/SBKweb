@@ -4,22 +4,15 @@ import { Header } from '../../components/Header/Header.jsx';
 import { motion } from 'framer-motion';
 import './landingPage.scss';
 
-/* const homeVariants = {
-  hidden: { x: '100vw' },
-  visible: { x: 0, transition: { duration: 0.5, type: 'tween' } },
-}; */
+const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
 
 export const LandingPage = () => {
-
   return (
     <motion.div
       className="landingPage_div"
-      /*    variants={homeVariants}
-      inital="hidden"
-      animate="visible"
-      exit="hidden" */
+      exit={{ y: '-100' }}
+      transition={transition}
     >
-      {' '}
       <Header />
       <Home />
     </motion.div>

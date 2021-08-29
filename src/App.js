@@ -8,19 +8,26 @@ import AboutUs from './pages/AboutUs/AboutUs';
 import { About } from './components/About/About';
 import { Contacts } from './components/Contacts/Contacts';
 import ContactPage from './pages/ContactPage/ContactPage';
+import InitialDesktop from './pages/InitialDesktop/InitialDesktop';
+import Desktop from './pages/Desktop/Desktop';
 
 function App() {
   const location = useLocation();
+
+  const imageDetails = {
+    width: 300,
+    height: 300,
+  };
 
   return (
     <AnimatePresence exitBeforeEnter>
       <Switch location={location} key={location.key}>
         {' '}
         <Route path="/onas/informace">
-          <About />
+          <About imageDetails={imageDetails} />
         </Route>
         <Route path="/onas">
-          <AboutUs />
+          <AboutUs imageDetails={imageDetails} />
         </Route>
         <Route path="/codelame">
           <WhatWeDo />
@@ -33,6 +40,9 @@ function App() {
         </Route>
         <Route path="/kontakty">
           <Contacts />
+        </Route>{' '}
+        <Route path="/home">
+          <InitialDesktop />
         </Route>
         <Route path="/">
           <LandingPage />
