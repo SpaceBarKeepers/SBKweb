@@ -1,12 +1,12 @@
 import React from 'react';
 import { useHistory } from 'react-router';
 import MenuButton from '../MenuButton/MenuButton';
-import astronaut from '../../images/icons/astronaut.png';
-import home from '../../images/icons/home2.png';
-import contact from '../../images/icons/contact.png';
-import references from '../../images/icons/references.png';
+import astronaut from '../../images/icons/aboutUs.png';
+import home from '../../images/icons/homePageWhite.png';
+import contact from '../../images/icons/contacts.png';
+import references from '../../images/icons/referenceWhite.png';
 import logo from '../../images/logo/white_long.svg';
-import products from '../../images/icons/products.png';
+import products from '../../images/icons/product.png';
 import './navbar.scss';
 
 function Navbar() {

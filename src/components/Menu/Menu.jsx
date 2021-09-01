@@ -1,4 +1,6 @@
 import React from 'react';
+import menuSign from '../../images/graphics/menuSign.png';
+import menuGraphics from '../../images/graphics/menuGraphics.png';
 import textJSON from '../../texts.json';
 import './menu.scss';
 
@@ -6,7 +8,9 @@ export const Menu = () => {
   return (
     <section className="menu">
       <header className="menu_header">
-        <h2 className="menu_title">Menu</h2>
+        <div className="menu_title">
+          <img src={menuSign} alt="" />
+        </div>
         <div className="menu_mainText">{textJSON.whatWeDo.mainText}</div>
       </header>
       <main className="menu_main">
@@ -69,6 +73,9 @@ export const Menu = () => {
           </div>
         </div>
       </main>
+      <div className="menu_bottom">
+        <img src={menuGraphics} alt="" />
+      </div>
     </section>
   );
 };

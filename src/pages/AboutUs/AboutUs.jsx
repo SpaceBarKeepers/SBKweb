@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Header } from '../../components/Header/Header';
 import Navbar from '../../components/Navbar/Navbar';
 import { motion } from 'framer-motion';

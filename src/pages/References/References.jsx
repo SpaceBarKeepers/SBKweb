@@ -8,7 +8,6 @@ import left from '../../images/icons/left.png';
 import right from '../../images/icons/right.png';
 import ReferenceItem from './ReferenceItem/ReferenceItem';
 import screen from '../../images/graphics/Platno.png';
-import light from '../../images/graphics/Light.png';
 import '@brainhubeu/react-carousel/lib/style.css';
 import './references.scss';
 
@@ -125,17 +124,25 @@ function References() {
               },
             ]}
           >
-            <ReferenceItem refName="Letokruh" refDetails="detaily" />
-            <ReferenceItem refName="ConsultVision" refDetails="detaily" />
+            <ReferenceItem
+              refName="Letokruh"
+              refDetails="Realizace webu podle UX designu - React šablona pro Wordpress."
+            />
+
             <ReferenceItem
               refName="Dámský klub Český Krumlov"
-              refDetails="detaily"
+              refDetails="Vytvoření kompletního webu na míru."
+            />
+            <ReferenceItem
+              refName="SKP Hvězda Jirkov"
+              refDetails="Vytvoření kompletního webu na míru a vlastní grafika."
+            />
+            <ReferenceItem
+              refName="ConsultVision"
+              refDetails="Vytvoření kompletního webu na míru."
             />
           </Carousel>
         </div>
-       {/*  <div>
-          <img className="projectorLight" src={light} alt="" />
-        </div> */}
         <div
           className="references_chairs"
           style={{ backgroundImage: `url(${chairsProjector})` }}

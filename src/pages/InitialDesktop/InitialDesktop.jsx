@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import rocket from '../../images/graphics/RaketaNosign.png';
 import './initialDesktop.scss';
-import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar/Navbar';
 
 const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
