@@ -4,52 +4,83 @@
 .menu {
   background-color: $white;
   color: $black;
-  padding: 50px 100px;
+  padding: 12px 24px;
   width: 90%;
-  margin: 0 auto;
+  margin: 24px auto;
+  @media (min-width: 1100px) {
+    padding: 50px 100px;
+  }
   &_header {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 50px;
+    @media (min-width: 1100px) {
+      flex-direction: row;
+      margin: 50px;
+    }
   }
   &_title {
-    margin: 0;
-    flex-basis: 60%;
-    font-weight: 900;
+    margin: 12px;
+    @media (min-width: 1100px) {
+      margin: 0;
+      flex-basis: 60%;
+    }
     & img {
       width: 100%;
     }
   }
   &_mainText {
-    flex-basis: 35%;
-    font-size: 24px;
-    line-height: 32px;
-    text-align: right;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    @media (min-width: 1100px) {
+      flex-basis: 35%;
+      font-size: 24px;
+      line-height: 32px;
+      text-align: right;
+    }
   }
   &_main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     margin: 0 auto;
+    @media (min-width: 1100px) {
+      flex-direction: row;
+    }
+    &1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
     & h3 {
       text-transform: uppercase;
-      font-size: 48px;
+      font-size: 32px;
       font-weight: 500;
+      text-align: center;
+      @media (min-width: 1100px) {
+        text-align: left;
+        font-size: 40px;
+      }
     }
   }
   &_mainIngredients,
   &_somethingExtra {
-    padding: 24px 50px;
-    flex-basis: 40%;
+    flex-basis: 45%;
     & h4 {
-      font-size: 18px;
+      font-size: 16px;
       font-family: $headers;
       font-weight: 700;
       margin: 24px 0 8px 0;
+      @media (min-width: 1100px) {
+        font-size: 18px;
+      }
     }
     & p {
       margin: 0;
+      width: 80%;
     }
     & div {
       padding-bottom: 12px;
@@ -57,11 +88,34 @@
     }
   }
   &_mainIngredients {
-    border-right: 0.5px solid $black;
+    @media (min-width: 1100px) {
+      border-right: 0.5px solid $black;
+      padding: 0 24px 24px 0;
+    }
   }
+  &_somethingExtra {
+    @media (min-width: 1100px) {
+      padding: 0 0 24px 24px;
+    }
+    &_plus {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      @media (min-width: 1100px) {
+        width: 50%;
+        justify-content: center;
+      }
+      & h4 {
+        margin-right: 11px;
+      }
+    }
+  }
+
   &_bottom {
     width: 100%;
     margin: 0 auto;
+    text-align: center;
     & img {
       max-width: 100%;
       margin: 0 auto;
