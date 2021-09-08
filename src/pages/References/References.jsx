@@ -7,6 +7,9 @@ import chairsProjector from '../../images/graphics/Projector.png';
 import left from '../../images/icons/left.png';
 import right from '../../images/icons/right.png';
 import ReferenceItem from './ReferenceItem/ReferenceItem';
+import cv from '../../images/references/CV.png';
+import letokruh from '../../images/references/Letokruh.png';
+import dkck from '../../images/references/DKCK.png';
 import screen from '../../images/graphics/Platno.png';
 import '@brainhubeu/react-carousel/lib/style.css';
 import './references.scss';
@@ -53,9 +56,9 @@ function References() {
                     >
                       <img
                         style={{
-                          marginLeft: '16px',
-                          width: '32px',
-                          height: '32px',
+                          marginLeft: '0',
+                          width: '24px',
+                          height: '24px',
                         }}
                         src={left}
                         alt="šipka doleva"
@@ -72,9 +75,9 @@ function References() {
                     >
                       <img
                         style={{
-                          marginLeft: '16px',
-                          width: '32px',
-                          height: '32px',
+                          marginLeft: '0',
+                          width: '24px',
+                          height: '24px',
                         }}
                         src={left}
                         alt="šedá šipka doleva"
@@ -91,9 +94,9 @@ function References() {
                     >
                       <img
                         style={{
-                          marginRight: '16px',
-                          width: '32px',
-                          height: '32px',
+                          marginRight: '0',
+                          width: '24px',
+                          height: '24px',
                         }}
                         src={right}
                         alt="šipka doprava"
@@ -110,9 +113,9 @@ function References() {
                     >
                       <img
                         style={{
-                          marginRight: '16px',
-                          width: '32px',
-                          height: '32px',
+                          marginRight: '0',
+                          width: '24px',
+                          height: '24px',
                         }}
                         src={right}
                         alt="šedá šipka doprava"
@@ -127,11 +130,13 @@ function References() {
             <ReferenceItem
               refName="Letokruh"
               refDetails="Realizace webu podle UX designu - React šablona pro Wordpress."
+              refImg={letokruh}
             />
 
             <ReferenceItem
               refName="Dámský klub Český Krumlov"
               refDetails="Vytvoření kompletního webu na míru."
+              refImg={dkck}
             />
             <ReferenceItem
               refName="SKP Hvězda Jirkov"
@@ -140,6 +145,7 @@ function References() {
             <ReferenceItem
               refName="ConsultVision"
               refDetails="Vytvoření kompletního webu na míru."
+              refImg={cv}
             />
           </Carousel>
         </div>

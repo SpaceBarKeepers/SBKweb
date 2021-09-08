@@ -22,8 +22,7 @@ function WhatWeDo() {
       animate="visible"
       exit="hidden"
     >
-      <Header />
-      <Navbar />
+      <Header /> <Navbar />
       <h1>Co děláme</h1>
       <Menu />
     </motion.div>

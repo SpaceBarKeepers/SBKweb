@@ -12,7 +12,6 @@ export const Contacts = () => {
     <>
       <section className="contacts_section">
         <Header />
-
         <Navbar />
         <div className="contacts_div"> </div>
         <div className="contact_details">

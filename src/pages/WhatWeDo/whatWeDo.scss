@@ -1,6 +1,8 @@
 @import '../../sass/colors';
 .whatWeDo_section {
   max-width: 1500px;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   height: 100vh;
   background: linear-gradient(180deg, $purple 80%, $raspberry 80%);
