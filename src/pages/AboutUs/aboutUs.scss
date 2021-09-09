@@ -4,7 +4,7 @@
   max-width: 1500px;
   margin: 0 auto;
   background: linear-gradient(180deg, $purple 80%, $raspberry 80%);
-  height: 100vh;
+  height: 100%;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -13,17 +13,16 @@
     background: none;
   }
   & h1 {
-    margin: 40px auto 24px auto;
+    margin: 60px auto 24px auto;
     text-align: center;
   }
-  & .thumbnail {
-    overflow: hidden;
-    position: relative;
-    order: -1;
-  }
-  & .frame {
-    img {
-      width: 100%;
+  & main {
+    display: flex;
+    flex-direction: column;
+    & h3 {
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 2.5px;
     }
   }
 }
@@ -36,29 +35,56 @@
   background-size: cover;
   bottom: 30px;
   right: 10px;
+  order: 2;
   @media (min-width: 500px) {
     bottom: 0;
     width: 300px;
     height: 300px;
   }
   @media (min-width: 1100px) {
-    display: none;
+    align-self: flex-end;
   }
 }
 
-.aboutUs_window .aboutUs_content {
-  font-size: 5px;
-  color: $white;
+.aboutUs_window {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.window_graphics {
+  max-width: 100%;
+}
+
+.window_photo {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
   position: absolute;
-  top: 25%;
-  width: 50%;
-  left: 25%;
-  cursor: pointer;
-  & p {
-    line-height: 5px;
-  }
-  & h2 {
+  left: 50%;
+  margin-left: -100px;
+  top: 50%;
+  margin-top: -100px;
+}
+
+.aboutUs_mainText {
+  line-height: 24px;
+  padding: 0 24px;
+  @media (min-width: 1100px) {
     text-align: center;
-    text-transform: uppercase;
+  }
+}
+
+.aboutUs_text {
+  line-height: 24px;
+  padding: 24px;
+}
+
+.aboutUs_us {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 1100px) {
+    flex-direction: row;
   }
 }

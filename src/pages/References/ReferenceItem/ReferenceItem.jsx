@@ -13,7 +13,7 @@ function ReferenceItem(props) {
         initial={{ opacity: 0 }}
         animate={{
           opacity: 1,
-          backgroundColor: 'rgba(250, 248, 221, 0.92)',
+          backgroundColor: 'rgba(227, 11, 93, 0.9)',
           transition: { duration: 1.1, delay: 1 },
         }}
       >

@@ -4,20 +4,21 @@
 .references_section {
   max-width: 1500px;
   margin: 0 auto;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   position: relative;
   & h1 {
-    margin: 40px auto 0 auto;
+    margin: 60px auto 0 auto;
     text-align: center;
   }
 }
 
 .references_chairs {
   position: relative;
-  width: 350px;
-  height: 350px;
+  width: 280px;
+  height: 280px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -27,6 +28,8 @@
   }
   @media (min-width: 1100px) {
     bottom: 0;
+    width: 450px;
+    height: 450px;
   }
 }
 .graphics {
@@ -35,7 +38,7 @@
   align-items: center;
 }
 .projectorScreen {
-  margin: 24px auto;
+  margin: 24px auto 0 auto;
   width: 300px;
   height: 220px;
   background-position: center;

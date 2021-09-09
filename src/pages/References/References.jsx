@@ -31,7 +31,8 @@ function References() {
       exit="hidden"
       className="references_section"
     >
-      <Header /> <Navbar />
+      <Header /> 
+      <Navbar />
       <h1>Reference</h1>
       <div className="graphics">
         <div
