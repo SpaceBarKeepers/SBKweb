@@ -21,45 +21,58 @@ const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
 
 function AboutUs() {
   return (
-    <motion.div
-      variants={aboutUsVariants}
-      initial="hidden"
-      animate="visible"
-      className="aboutUs_section"
-    >
-      <Header />
-      <Navbar />
-      <main>
-        <motion.h1 exit={{ opacity: 0 }} transition={transition}>
-          O nás
-        </motion.h1>
-        <p className="aboutUs_mainText">{textJSON.aboutUs.mainText}</p>
-        <motion.div
-          exit={{ opacity: 0 }}
-          transition={transition}
-          className="aboutUs_chairs"
-          style={{ backgroundImage: `url(${chairsAboutUs})` }}
-        ></motion.div>
-        <div className="aboutUs_us">
-          <div>
-            <h3>Bára</h3>{' '}
-            <div className="aboutUs_window">
-              <img className="window_graphics" src={window} alt="okno" />
-              <img className="window_photo" src={bara} alt="fotografie Báry" />
+    <>
+      {' '}
+      <motion.div
+        variants={aboutUsVariants}
+        initial="hidden"
+        animate="visible"
+        className="aboutUs_section"
+      >
+        <Header />
+        <Navbar />
+        <main>
+          <motion.h1 exit={{ opacity: 0 }} transition={transition}>
+            O nás
+          </motion.h1>
+          <p className="aboutUs_mainText">{textJSON.aboutUs.mainText}</p>
+          <motion.div
+            exit={{ opacity: 0 }}
+            transition={transition}
+            className="aboutUs_chairs"
+            style={{ backgroundImage: `url(${chairsAboutUs})` }}
+          ></motion.div>
+
+          <div className="aboutUs_us">
+            <div>
+              <h3>Bára</h3>{' '}
+              <div className="aboutUs_window">
+                <img className="window_graphics" src={window} alt="okno" />
+                <img
+                  className="window_photo"
+                  src={bara}
+                  alt="fotografie Báry"
+                />
+              </div>
+              <p className="aboutUs_text">{textJSON.aboutUs.bara}</p>
             </div>
-            <p className="aboutUs_text">{textJSON.aboutUs.bara}</p>
-          </div>
-          <div>
-            <h3>Kája</h3>{' '}
-            <div className="aboutUs_window">
-              <img className="window_graphics" src={window} alt="okno" />
-              <img className="window_photo" src={kaja} alt="fotografie Káji" />
+            <div>
+              <h3>Kája</h3>{' '}
+              <div className="aboutUs_window">
+                <img className="window_graphics" src={window} alt="okno" />
+                <img
+                  className="window_photo"
+                  src={kaja}
+                  alt="fotografie Káji"
+                />
+              </div>
+              <p className="aboutUs_text">{textJSON.aboutUs.karel}</p>
             </div>
-            <p className="aboutUs_text">{textJSON.aboutUs.karel}</p>
           </div>
-        </div>
-      </main>
-    </motion.div>
+        </main>
+{/*         <div className="graphics_rocket"></div>
+ */}      </motion.div>{' '}
+    </>
   );
 }
 

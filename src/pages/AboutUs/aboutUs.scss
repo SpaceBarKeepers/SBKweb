@@ -73,12 +73,18 @@
   padding: 0 24px;
   @media (min-width: 1100px) {
     text-align: center;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
 .aboutUs_text {
   line-height: 24px;
   padding: 24px;
+  @media (min-width: 1100px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .aboutUs_us {

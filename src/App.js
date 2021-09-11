@@ -5,7 +5,6 @@ import { LandingPage } from './pages/LandingPage/LandingPage';
 import WhatWeDo from './pages/WhatWeDo/WhatWeDo';
 import References from './pages/References/References';
 import AboutUs from './pages/AboutUs/AboutUs';
-import { About } from './components/About/About';
 import { Contacts } from './components/Contacts/Contacts';
 import ContactPage from './pages/ContactPage/ContactPage';
 import InitialDesktop from './pages/InitialDesktop/InitialDesktop';
@@ -13,20 +12,12 @@ import InitialDesktop from './pages/InitialDesktop/InitialDesktop';
 function App() {
   const location = useLocation();
 
-  const imageDetails = {
-    width: 300,
-    height: 300,
-  };
-
   return (
     <AnimatePresence exitBeforeEnter>
       <Switch location={location} key={location.key}>
         {' '}
-        <Route path="/onas/informace">
-          <About imageDetails={imageDetails} />
-        </Route>
         <Route path="/onas">
-          <AboutUs imageDetails={imageDetails} />
+          <AboutUs />
         </Route>
         <Route path="/codelame">
           <WhatWeDo />

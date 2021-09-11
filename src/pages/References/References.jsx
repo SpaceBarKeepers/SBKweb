@@ -16,9 +16,22 @@ import './references.scss';
 
 const referencesVariants = {
   hidden: { x: '-100vw' },
-  visible: {
+  animate: {
     x: 0,
     transition: { duration: 0.5, type: 'tween' },
+  },
+};
+
+const rocketVariants = {
+  initial: { y: 0 },
+  animate: {
+    y: '60%',
+    scale: 1,
+    transition: {
+      delay: 0.3,
+      duration: 2.5,
+      ease: [0.33, 0.43, 0.53, 0.83],
+    },
   },
 };
 
@@ -27,13 +40,14 @@ function References() {
     <motion.div
       variants={referencesVariants}
       initial="hidden"
-      animate="visible"
+      animate="animate"
       exit="hidden"
       className="references_section"
     >
-      <Header /> 
+      <Header />
       <Navbar />
       <h1>Reference</h1>
+      <div className="graphics_rocket"></div>
       <div className="graphics">
         <div
           className="projectorScreen"

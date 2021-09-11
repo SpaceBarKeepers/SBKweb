@@ -5,6 +5,8 @@
     width: 400px;
     height: auto;
     margin: 0 auto;
+    position: relative;
+    z-index: -1;
 
     img {
       width: 100%;

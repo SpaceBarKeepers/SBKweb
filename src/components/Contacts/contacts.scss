@@ -4,9 +4,17 @@
 .contacts_section {
   display: Flex;
   flex-direction: column;
+  @media (min-width: 1100px) {
+    height: auto;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../images/graphics/RaketaNochairs.png');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
-.contacts_div {
+.graphics_div {
   height: 70vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,26 +24,58 @@
     background-image: url('../../images/graphics/TabletNochairs.png');
   }
   @media (min-width: 1100px) {
-    height: auto;
-    width: 100vw;
-    height: 100vh;
-    background-image: url('../../images/graphics/RaketaNosign.png');
-    background-position: center;
+    background: none;
+    height: 60vh;
   }
 }
-.contact_details div {
+.contact_details {
+  font-size: 20px;
+  height: 20vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  @media (min-width: 500px) {
-    flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  & div {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
+    margin: 12px;
+    & span {
+      margin: 8px;
+      @media (min-width: 500px) {
+        margin: 16px;
+      }
+    }
+  }
+  & a {
+    text-decoration: none;
+    color: $white;
+    &:hover {
+      color: $yellow;
+    }
+  }
+  @media (min-width: 500px) {
+    align-items: center;
+    height: auto;
+    font-size: 22px;
+  }
+  @media (min-width: 1100px) {
+    width: 550px;
+    margin: 0 auto;
   }
 }
-
-.contact_details {
-  height: 30vh;
-  width: 80%;
-  margin: 0 auto;
+.contact_details .moreInfo {
+  align-self: flex-end;
+  margin: 8px;
+  color: $extraDarkBlue;
+  @media (min-width: 500px) {
+    color: $raspberry;
+    align-self: center;
+    margin: 16px;
+  }
+  @media (min-width: 1100px) {
+    color: $shelf;
+  }
 }
