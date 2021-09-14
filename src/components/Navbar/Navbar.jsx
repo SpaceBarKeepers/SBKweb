@@ -5,7 +5,7 @@ import astronaut from '../../images/icons/aboutUs.png';
 import home from '../../images/icons/homePageWhite.png';
 import contact from '../../images/icons/contacts.png';
 import references from '../../images/icons/referenceWhite.png';
-import logo from '../../images/logo/white_long.svg';
+import logo from '../../images/logo/white_long.png';
 import products from '../../images/icons/product.png';
 import './navbar.scss';
 

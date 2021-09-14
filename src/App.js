@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { Route, Switch, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { LandingPage } from './pages/LandingPage/LandingPage';
@@ -10,7 +10,23 @@ import ContactPage from './pages/ContactPage/ContactPage';
 import InitialDesktop from './pages/InitialDesktop/InitialDesktop';
 
 function App() {
+  const [wideScreen, setWideScreen] = useState(false)
   const location = useLocation();
+
+  useEffect(() => {
+    if (window.innerWidth >= 1100) {
+      setWideScreen(true);
+    }
+    window.addEventListener('resize', handleResize);
+  }, []);
+
+  const handleResize = () => {
+    if (window.innerWidth >= 1100) {
+      setWideScreen(true);
+    } else {
+      setWideScreen(false);
+    }
+  };
 
   return (
     <AnimatePresence exitBeforeEnter>
@@ -35,7 +51,7 @@ function App() {
           <InitialDesktop />
         </Route>
         <Route path="/">
-          <LandingPage />
+          {wideScreen ? <InitialDesktop /> : <LandingPage/>}
         </Route>
       </Switch>
     </AnimatePresence>
