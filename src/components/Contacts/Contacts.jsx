@@ -2,7 +2,6 @@ import React from 'react';
 import { Header } from '../../components/Header/Header.jsx';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import contacts from '../../images/graphics/bar_mobile_nochairs.png';
 import Navbar from '../Navbar/Navbar';
 import './contacts.scss';
 
@@ -11,7 +10,6 @@ export const Contacts = () => {
     <>
       <motion.section
         className="contacts_section"
-        className="contact_details"
         initial={{ y: '100vh' }}
         exit={{ y: '100vh' }}
         animate={{
@@ -22,14 +20,7 @@ export const Contacts = () => {
         <Header />
         <div className="graphics_div"> </div>
 
-        <motion.div
-          className="contact_details"
-          initial={{ opacity: 0 }}
-          animate={{
-            opacity: 1,
-            transition: { duration: 1.5, delay: 0.5 },
-          }}
-        >
+        <motion.div className="contact_details">
           <div>
             <a href="mailto:info@spacebarkeepers.com" className="contact_email">
               info@spacebarkeepers.com
