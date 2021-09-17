@@ -15,17 +15,20 @@ const wwdVariants = {
 
 function WhatWeDo() {
   return (
-    <motion.div
-      className="whatWeDo_section"
-      variants={wwdVariants}
-      initial="hidden"
-      animate="visible"
-      exit="hidden"
-    >
-      <Header /> <Navbar />
-      <h1>Co děláme</h1>
-      <Menu />
-    </motion.div>
+    <>
+      <motion.div
+        className="whatWeDo_section"
+        variants={wwdVariants}
+        initial="hidden"
+        animate="visible"
+        exit="hidden"
+      >
+        <Header />
+        <h1>Co děláme</h1>
+        <Menu />
+      </motion.div>
+      <Navbar />
+    </>
   );
 }
 

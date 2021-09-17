@@ -23,5 +23,23 @@
       "analytickeZkusenosti": "Hromady dat nám nejsou cizí. Rádi Vám pomůžeme s jejich vizualizací.",
       "plus": "přísada dle Vašeho výběru"
     }
+  },
+  "contacts": {
+    "bara": {
+      "name": "Bára Marešová",
+      "ic": "09833340",
+      "phone": "+420 601 563 231",
+      "email": "bara@spacebarkeepers.com",
+      "adresa": "Herlíkovická 1000/24, Praha 197 00",
+      "web": "https://baramaresova.com"
+    },
+    "kaja": {
+      "name": "Karel Dohnal",
+      "ic": "75241439",
+      "phone": "+420 602 235 137",
+      "email": "karel@spacebarkeepers.com",
+      "adresa": "Káranská 340/30, Praha 108 00",
+      "web": "https://kareldohnal.github.io"
+    }
   }
 }

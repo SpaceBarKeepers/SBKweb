@@ -6,8 +6,10 @@ function MenuButton(props) {
   const handleClick =
     typeof props.handleClick !== 'undefined' ? props.handleClick : () => {};
 
+  const hover = typeof props.hover !== 'undefined' ? props.hover : 'yesHover';
+
   return (
-    <button className="menu_buttons" onClick={() => handleClick()}>
+    <button className={`menu_buttons ${hover}`} onClick={() => handleClick()}>
       {props.buttonName}
     </button>
   );

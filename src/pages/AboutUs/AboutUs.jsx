@@ -2,7 +2,7 @@ import React from 'react';
 import { Header } from '../../components/Header/Header';
 import Navbar from '../../components/Navbar/Navbar';
 import { motion } from 'framer-motion';
-import chairsAboutUs from '../../images/graphics/KreslaStul1.png';
+import chairsAboutUs from '../../images/graphics/kreslastul1.png';
 import bara from '../../images/photos/bara.jpeg';
 import kaja from '../../images/photos/kaja.jpeg';
 import textJSON from '../../texts.json';
@@ -22,15 +22,14 @@ const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
 function AboutUs() {
   return (
     <>
-      {' '}
       <motion.div
         variants={aboutUsVariants}
         initial="hidden"
         animate="visible"
         className="aboutUs_section"
+        exit="hidden"
       >
         <Header />
-        <Navbar />
         <main>
           <motion.h1 exit={{ opacity: 0 }} transition={transition}>
             O nás
@@ -70,8 +69,10 @@ function AboutUs() {
             </div>
           </div>
         </main>
-{/*         <div className="graphics_rocket"></div>
- */}      </motion.div>{' '}
+        {/*         <div className="graphics_rocket"></div>
+         */}{' '}
+      </motion.div>{' '}
+      <Navbar />
     </>
   );
 }

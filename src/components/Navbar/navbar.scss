@@ -1,18 +1,20 @@
 @import '../../sass/colors';
-@import '../../sass/typography';
+
 .navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  padding: 0 0 8px 0;
+  padding: 12px 0;
   max-width: 1500px;
   margin: 0 auto;
-  order: 2;
+  position: sticky;
+  bottom: 0;
+  background-color: $raspberry;
   @media (min-width: 500px) {
     background-color: $black;
-    order: -1;
     height: auto;
+    top: 0;
   }
   @media (min-width: 1100px) {
     z-index: 2;
@@ -32,7 +34,7 @@
     display: flex;
     color: $white;
     text-transform: uppercase;
-    font-family: $headers;
+    font-family: 'Encode Sans Expanded', sans-serif;
   }
 }
 .menuLogo {

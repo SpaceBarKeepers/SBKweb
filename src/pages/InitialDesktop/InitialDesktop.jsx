@@ -6,13 +6,6 @@ import Navbar from '../../components/Navbar/Navbar';
 
 const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
 
-/* const mainVariants = {
-  animate: {
-    transition: {
-      staggerChildren: 1.04,
-    },
-  },
-}; */
 const rocketVariants = {
   initial: { y: 0 },
   animate: {

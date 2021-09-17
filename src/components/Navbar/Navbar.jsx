@@ -14,10 +14,16 @@ function Navbar() {
   return (
     <section className="navbar">
       <MenuButton
+        hover="noHover"
         buttonName={
           <>
             <img className="menuIcon" src={home} alt="ikona domu" />
-            <img className="menuLogo" src={logo} alt="logo" />
+            <img
+              style={{ backgroundColor: 'transparent' }}
+              className="menuLogo"
+              src={logo}
+              alt="logo"
+            />
           </>
         }
         handleClick={() => push('/')}
