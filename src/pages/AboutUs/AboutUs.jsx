@@ -2,7 +2,7 @@ import React from 'react';
 import { Header } from '../../components/Header/Header';
 import Navbar from '../../components/Navbar/Navbar';
 import { motion } from 'framer-motion';
-import chairsAboutUs from '../../images/graphics/kreslastul1.png';
+import chairsAboutUs from '../../images/graphics/KreslaStul1.png';
 import bara from '../../images/photos/bara.jpeg';
 import kaja from '../../images/photos/kaja.jpeg';
 import textJSON from '../../texts.json';

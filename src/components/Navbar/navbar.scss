@@ -7,14 +7,14 @@
   width: 100%;
   padding: 12px 0;
   max-width: 1500px;
-  margin: 0 auto;
-  position: sticky;
+  position: fixed;
   bottom: 0;
   background-color: $raspberry;
   @media (min-width: 500px) {
     background-color: $black;
     height: auto;
     top: 0;
+    bottom: auto;
   }
   @media (min-width: 1100px) {
     z-index: 2;
