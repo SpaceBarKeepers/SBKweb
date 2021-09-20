@@ -1,40 +1,62 @@
 import React from 'react';
-import { Header } from '../../components/Header/Header.jsx';
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import Navbar from '../Navbar/Navbar';
 import './contacts.scss';
+import textJSON from '../../texts.json';
 
 export const Contacts = () => {
   return (
     <>
-      <motion.section
-        className="contacts_section"
-        initial={{ y: '100vh' }}
-        exit={{ y: '100vh' }}
-        animate={{
-          y: 0,
-          transition: { duration: 0.5, type: 'tween' },
-        }}
-      >
-        <Header />
-        <div className="graphics_div"> </div>
-
-        <motion.div className="contact_details">
-          <div>
-            <a href="mailto:info@spacebarkeepers.com" className="contact_email">
-              info@spacebarkeepers.com
-            </a>
-            <span className="contact_phone">
-              <a href="tel:601563231">+420 601 563 231</a>
+        <div className="contacts_both">
+          <div className="contacts_one">
+            <h3>{textJSON.contacts.bara.name}</h3>
+            <span>
+              <strong>IČ:</strong> {textJSON.contacts.bara.ic}
+            </span>
+            <span>
+              <strong>Telefonní číslo:</strong> {textJSON.contacts.bara.phone}
+            </span>
+            <span>
+              <strong>Email:</strong> {textJSON.contacts.bara.email}
+            </span>
+            <span>
+              <strong>Adresa:</strong> {textJSON.contacts.bara.adresa}
+            </span>
+            <span>
+              <a
+                href={textJSON.contacts.bara.web}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Osobní web
+              </a>
             </span>
           </div>
-          <Link className="moreInfo" to="/kontakty/detaily">
-            Více informací{' '}
-          </Link>
-        </motion.div>
-      </motion.section>
-      <Navbar />
+          <div className="contacts_one">
+            <h3>{textJSON.contacts.kaja.name}</h3>
+            <span>
+              <strong>IČ:</strong> {textJSON.contacts.kaja.ic}
+            </span>
+            <span>
+              <strong>Telefonní číslo: </strong>
+              {textJSON.contacts.kaja.phone}
+            </span>
+            <span>
+              <strong>Email:</strong> {textJSON.contacts.kaja.email}
+            </span>
+            <span>
+              <strong>Adresa:</strong> {textJSON.contacts.kaja.adresa}
+            </span>
+            <span>
+              <a
+                href={textJSON.contacts.kaja.web}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Osobní web
+              </a>
+            </span>
+          </div>
+        </div>
     </>
   );
 };

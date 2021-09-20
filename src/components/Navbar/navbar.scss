@@ -7,6 +7,7 @@
   width: 100%;
   padding: 12px 0;
   max-width: 1500px;
+  margin: 0 auto;
   position: fixed;
   bottom: 0;
   background-color: $raspberry;
@@ -42,5 +43,8 @@
   @media (min-width: 500px) {
     display: block;
     height: 40px;
+  }
+  @media (min-width: 1100px) {
+    height: 56px;
   }
 }

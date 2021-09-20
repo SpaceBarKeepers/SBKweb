@@ -1,4 +1,6 @@
 .initialDesktop {
+  max-width: 1500px;
+  margin: 0 auto;
   height: 100vh;
 
   .iDframe {
@@ -7,6 +9,7 @@
     margin: 0 auto;
     position: relative;
     z-index: -1;
+    overflow: hidden;
 
     img {
       width: 100%;

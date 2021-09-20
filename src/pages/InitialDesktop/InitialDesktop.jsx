@@ -10,7 +10,7 @@ const rocketVariants = {
   initial: { y: 0 },
   animate: {
     y: '60%',
-    scale: 7,
+    scale: 6,
     transition: {
       delay: 0.3,
       duration: 2.5,
@@ -41,7 +41,7 @@ function InitialDesktop() {
           animate="animate"
           initial="initial"
         >
-            <motion.img src={rocket} alt="okno" transition={transition} />
+          <motion.img src={rocket} alt="okno" transition={transition} />
         </motion.div>
       </div>
     </motion.main>

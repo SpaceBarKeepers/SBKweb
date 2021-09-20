@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import { Route, Switch, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { LandingPage } from './pages/LandingPage/LandingPage';
@@ -10,7 +10,7 @@ import ContactPage from './pages/ContactPage/ContactPage';
 import InitialDesktop from './pages/InitialDesktop/InitialDesktop';
 
 function App() {
-  const [wideScreen, setWideScreen] = useState(false)
+  const [wideScreen, setWideScreen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -41,17 +41,14 @@ function App() {
         <Route path="/reference">
           <References />
         </Route>
-        <Route path="/kontakty/detaily">
-          <ContactPage />
-        </Route>
         <Route path="/kontakty">
-          <Contacts />
+          <ContactPage />
         </Route>{' '}
         <Route path="/home">
           <InitialDesktop />
         </Route>
         <Route path="/">
-          {wideScreen ? <InitialDesktop /> : <LandingPage/>}
+          {wideScreen ? <InitialDesktop /> : <LandingPage />}
         </Route>
       </Switch>
     </AnimatePresence>
