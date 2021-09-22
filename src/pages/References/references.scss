@@ -3,14 +3,14 @@
 .references_section {
   max-width: 1500px;
   margin: 0 auto;
-  padding: 50px 0;
-  height: 100%;
+  padding: 24px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
   overflow: visible;
   z-index: 2;
+  background: transparent;
 
   & h1 {
     margin: 60px auto 0 auto;
@@ -40,7 +40,6 @@
   flex-direction: column;
   align-items: center;
   overflow: visible;
-
 }
 .projectorScreen {
   margin: 24px auto 0 auto;

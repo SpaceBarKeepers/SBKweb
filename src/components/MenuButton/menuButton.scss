@@ -2,11 +2,18 @@
 
 .menu_buttons {
   background-color: transparent;
-  border: none;
+  border-right: 2px solid $darkRaspberry;
+  border-top: 2px solid $darkRaspberry;
+  border-left: none;
+  border-bottom: none;
   cursor: pointer;
+  margin: 0;
+  width: 100%;
+  padding: 8px 0;
   @media (min-width: 500px) {
     padding: 8px 16px;
     border-radius: 8px;
+    border: none;
   }
   @media (min-width: 1100px) {
     font-size: 20px;

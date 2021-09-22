@@ -16,6 +16,7 @@ const wwdVariants = {
 function WhatWeDo() {
   return (
     <>
+      <Navbar />
       <motion.div
         className="whatWeDo_section"
         variants={wwdVariants}
@@ -27,7 +28,6 @@ function WhatWeDo() {
         <h1>Co děláme</h1>
         <Menu />
       </motion.div>
-      <Navbar />
     </>
   );
 }

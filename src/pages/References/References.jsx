@@ -26,6 +26,7 @@ const referencesVariants = {
 function References() {
   return (
     <>
+      <Navbar />
       <motion.div
         variants={referencesVariants}
         initial="hidden"
@@ -159,7 +160,6 @@ function References() {
           ></div>
         </div>
       </motion.div>
-      <Navbar />
     </>
   );
 }

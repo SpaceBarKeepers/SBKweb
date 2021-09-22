@@ -9,8 +9,8 @@ const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
 const rocketVariants = {
   initial: { y: 0 },
   animate: {
-    y: '60%',
-    scale: 6,
+    y: '80%',
+    scale: 10,
     transition: {
       delay: 0.3,
       duration: 2.5,

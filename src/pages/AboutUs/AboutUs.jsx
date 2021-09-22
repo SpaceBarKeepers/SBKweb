@@ -22,6 +22,7 @@ const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
 function AboutUs() {
   return (
     <>
+      <Navbar />
       <motion.div
         variants={aboutUsVariants}
         initial="hidden"
@@ -72,7 +73,6 @@ function AboutUs() {
         {/*         <div className="graphics_rocket"></div>
          */}{' '}
       </motion.div>{' '}
-      <Navbar />
     </>
   );
 }

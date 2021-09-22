@@ -8,6 +8,8 @@ import { Contacts } from '../../components/Contacts/Contacts.jsx';
 function ContactPage() {
   return (
     <>
+      <Navbar />
+
       <motion.section
         className="contacts_section"
         initial={{ y: '100vh' }}
@@ -31,7 +33,6 @@ function ContactPage() {
           <Contacts />
         </motion.div>
       </motion.section>
-      <Navbar />
     </>
   );
 }
