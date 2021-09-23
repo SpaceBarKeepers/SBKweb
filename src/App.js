@@ -12,6 +12,15 @@ import InitialDesktop from './pages/InitialDesktop/InitialDesktop';
 function App() {
   const [wideScreen, setWideScreen] = useState(false);
   const location = useLocation();
+  const ScrollToTop = () => {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+
+    return null;
+  };
 
   useEffect(() => {
     if (window.innerWidth >= 1100) {
@@ -30,6 +39,8 @@ function App() {
 
   return (
     <AnimatePresence exitBeforeEnter>
+      <ScrollToTop />
+
       <Switch location={location} key={location.key}>
         {' '}
         <Route path="/onas">
