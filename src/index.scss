@@ -4,11 +4,19 @@ body,
 html {
   margin: 0 auto;
   padding: 0;
+  html {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
 }
 
 body {
   background: linear-gradient(180deg, $purple 80%, $raspberry 80%);
-  overflow-anchor: none;
+  overflow-y: hidden;
   @media (min-width: 500px) {
     background: none;
   }

@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Navbar from '../../components/Navbar/Navbar';
 import './ContactPage.scss';
 import { Contacts } from '../../components/Contacts/Contacts.jsx';
+import ScrollForMore from './scrollForMore.js';
 
 function ContactPage() {
   return (
@@ -32,6 +33,7 @@ function ContactPage() {
           </span>
           <Contacts />
         </motion.div>
+        <ScrollForMore />
       </motion.section>
     </>
   );
