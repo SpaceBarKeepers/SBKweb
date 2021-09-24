@@ -2,26 +2,32 @@
 
 .aboutUs_section {
   max-width: 1500px;
+  width: 100%;
   margin: 0 auto;
   background: linear-gradient(180deg, $purple 80%, $raspberry 80%);
   height: 100%;
   position: relative;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
-  padding: 24px 0;
+  padding: 0 0 24px 0;
   @media (min-width: 500px) {
     background: none;
   }
+
   & h1 {
-    margin: 24px auto;
+    margin: 48px auto 0 auto;
     text-align: center;
+    @media (min-width: 500px) {
+      margin: 24px auto;
+    }
   }
   & main {
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
     padding-bottom: 50px;
+    @media (min-width: 1100px) {
+      padding: 0 24px;
+    }
     & h3 {
       text-transform: uppercase;
       text-align: center;
@@ -37,13 +43,13 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  bottom: 30px;
-  right: 10px;
+
   order: 2;
   @media (min-width: 500px) {
-    bottom: 0;
+    align-self: flex-end;
     width: 300px;
     height: 300px;
+    margin-right: 50px;
   }
   @media (min-width: 1100px) {
     align-self: flex-end;

@@ -8,6 +8,7 @@ html {
 
 body {
   background: linear-gradient(180deg, $purple 80%, $raspberry 80%);
+  overflow-anchor: none;
   @media (min-width: 500px) {
     background: none;
   }
@@ -22,6 +23,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    min-width: 100vw;
+    min-height: 100vh;
   }
 }
 
@@ -35,4 +38,3 @@ h1 {
   text-transform: uppercase;
   color: $shelf;
 }
-

@@ -1,7 +1,7 @@
-import React, {useEffect} from 'react';
-import {motion, useAnimation} from 'framer-motion';
+import React, { useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
 import './referenceItem.scss';
-import {useInView} from "react-intersection-observer";
+import { useInView } from 'react-intersection-observer';
 
 function ReferenceItem(props) {
   const controls = useAnimation();
@@ -21,7 +21,7 @@ function ReferenceItem(props) {
     visible: {
       opacity: 1,
       backgroundColor: 'rgba(227, 11, 93, 0.9)',
-      transition: { duration: 1.1, delay: 1 },
+      transition: { duration: 1.1, delay: 0.5 },
     },
   };
 

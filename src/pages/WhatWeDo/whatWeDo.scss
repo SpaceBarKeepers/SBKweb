@@ -1,19 +1,24 @@
 @import '../../sass/colors';
 .whatWeDo_section {
   max-width: 1500px;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 0 auto;
-  padding: 24px 0;
+  padding: 0 0 24px 0;
   background: linear-gradient(180deg, $purple 80%, $raspberry 80%);
   @media (min-width: 500px) {
     background: none;
-    padding: 50px 0;
+    padding: 24px 0;
     height: 100%;
   }
   & h1 {
-    margin: 65px auto 0 auto;
+    margin: 20% auto 0 auto;
     text-align: center;
+    @media (min-width: 500px) {
+      margin: 24px auto;
+    }
   }
 }
 

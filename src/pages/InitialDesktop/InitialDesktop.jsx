@@ -1,16 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import rocket from '../../images/graphics/RaketaNosign.png';
+import rocket from '../../images/graphics/RaketaNosign.webp';
 import './initialDesktop.scss';
 import Navbar from '../../components/Navbar/Navbar';
 
 const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
 
 const rocketVariants = {
-  initial: { y: 0 },
+  initial: { y: '-40%', x: '40%', scale: 0.1 },
   animate: {
-    y: '80%',
-    scale: 10,
+    y: '-10%',
+    x: 0,
+    scale: 2,
     transition: {
       delay: 0.3,
       duration: 2.5,
