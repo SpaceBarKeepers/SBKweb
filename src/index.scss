@@ -4,10 +4,10 @@ body,
 html {
   margin: 0 auto;
   padding: 0;
-  html {
-    overflow: scroll;
-    overflow-x: hidden;
-  }
+
+  overflow: scroll;
+  overflow-x: hidden;
+
   ::-webkit-scrollbar {
     width: 0;
     background: transparent;
