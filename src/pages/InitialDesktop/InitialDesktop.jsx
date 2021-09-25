@@ -1,17 +1,18 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import {motion} from 'framer-motion';
 import rocket from '../../images/graphics/RaketaNosign.webp';
 import './initialDesktop.scss';
 import Navbar from '../../components/Navbar/Navbar';
+import {Link} from "react-router-dom";
 
-const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
+const transition = {duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96]};
 
 const rocketVariants = {
-  initial: { y: '-40%', x: '40%', scale: 0.1 },
+  initial: {y: '-40%', x: '40%', scale: 0.1},
   animate: {
-    y: '-10%',
-    x: 0,
-    scale: 2,
+    y: '-25%',
+    x: "-50%",
+    scale: 1.5,
     transition: {
       delay: 0.3,
       duration: 2.5,
@@ -24,7 +25,7 @@ function InitialDesktop() {
   return (
     <motion.main animate="animate" className="initialDesktop">
       <motion.div
-        initial={{ opacity: 0 }}
+        initial={{opacity: 0}}
         animate={{
           opacity: 1,
           transition: {
@@ -33,18 +34,20 @@ function InitialDesktop() {
           },
         }}
       >
-        <Navbar />{' '}
+        <Navbar/>{' '}
       </motion.div>
-      <div className="iDthumbnail">
+      <Link to="/codelame">
         <motion.div
           className="iDframe"
           variants={rocketVariants}
           animate="animate"
           initial="initial"
         >
-          <motion.img src={rocket} alt="okno" transition={transition} />
+
+            <motion.img src={rocket} alt="okno" transition={transition}/>
+
         </motion.div>
-      </div>
+      </Link>
     </motion.main>
   );
 }

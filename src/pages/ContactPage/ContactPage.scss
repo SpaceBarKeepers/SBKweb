@@ -71,7 +71,7 @@
   @media (min-width: 1100px) {
     max-width: 1500px;
     width: 100%;
-    height: 210px;
+    height: 270px;
     align-items: center;
     margin: 0 auto;
     overflow: scroll;
@@ -113,9 +113,9 @@
   display: none;
   @media (min-width: 1100px) {
     display: block;
-    position: absolute;
-    bottom: 310px;
-    left: 200px;
+    //position: absolute;
+    //bottom: 310px;
+    //left: 200px;
     z-index: 20;
     .icon {
       svg {

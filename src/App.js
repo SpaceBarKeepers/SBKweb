@@ -5,13 +5,12 @@ import { LandingPage } from './pages/LandingPage/LandingPage';
 import WhatWeDo from './pages/WhatWeDo/WhatWeDo';
 import References from './pages/References/References';
 import AboutUs from './pages/AboutUs/AboutUs';
-import { Contacts } from './components/Contacts/Contacts';
 import ContactPage from './pages/ContactPage/ContactPage';
 import InitialDesktop from './pages/InitialDesktop/InitialDesktop';
+import {BrowserRouter} from "react-router-dom";
 
 function App() {
   const [wideScreen, setWideScreen] = useState(false);
-  const location = useLocation();
   const ScrollToTop = () => {
     const { pathname } = useLocation();
 
@@ -39,10 +38,10 @@ function App() {
 
   return (
     <AnimatePresence exitBeforeEnter>
+      <BrowserRouter>
       <ScrollToTop />
 
-      <Switch location={location} key={location.key}>
-        {' '}
+      <Switch>
         <Route path="/onas">
           <AboutUs />
         </Route>
@@ -54,7 +53,7 @@ function App() {
         </Route>
         <Route path="/kontakty">
           <ContactPage />
-        </Route>{' '}
+        </Route>
         <Route path="/home">
           <InitialDesktop />
         </Route>
@@ -62,6 +61,7 @@ function App() {
           {wideScreen ? <InitialDesktop /> : <LandingPage />}
         </Route>
       </Switch>
+      </BrowserRouter>
     </AnimatePresence>
   );
 }

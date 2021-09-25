@@ -17,7 +17,7 @@ export const LandingPage = () => {
         transition={transition}
       >
         {' '}
-        <Header />
+        <Header logoType="homepage" />
         <Home />
       </motion.div>{' '}
     </>

@@ -36,7 +36,7 @@ function References() {
       >
         <Header />
         <h1>Reference</h1>
-        <div className="graphics_rocket"></div>
+        <div className="graphics_rocket" />
         <div className="graphics">
           <div
             className="projectorScreen"
@@ -135,29 +135,33 @@ function References() {
                 refName="Letokruh"
                 refDetails="Realizace webu podle UX designu - React šablona pro Wordpress."
                 refImg={letokruh}
+                refHref="http://letokruh.eu"
               />
 
               <ReferenceItem
                 refName="Dámský klub Český Krumlov"
                 refDetails="Vytvoření kompletního webu na míru."
                 refImg={dkck}
+                refHref="http://damskyklubck.cz"
               />
               <ReferenceItem
                 refName="SKP Hvězda Jirkov"
                 refDetails="Vytvoření kompletního webu na míru a vlastní grafika."
                 refImg={skp}
+                refHref="http://jkakaratejirkov.cz"
               />
               <ReferenceItem
                 refName="ConsultVision"
                 refDetails="Vytvoření kompletního webu na míru."
                 refImg={cv}
+                refHref="http://consultvision.cz"
               />
             </Carousel>
           </div>
           <div
             className="references_chairs"
             style={{ backgroundImage: `url(${chairsProjector})` }}
-          ></div>
+          />
         </div>
       </motion.div>
     </>

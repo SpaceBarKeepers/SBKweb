@@ -20,7 +20,7 @@ function ContactPage() {
           transition: { duration: 0.5, type: 'tween' },
         }}
       >
-        <Header />
+        <Header logoType="homepage" />
         <div className="graphics_div"> </div>
 
         <motion.div className="contact_details">
@@ -31,9 +31,9 @@ function ContactPage() {
           <span className="contact_phone">
             <a href="tel:601563231">+420 601 563 231</a>
           </span>
+          <ScrollForMore />
           <Contacts />
         </motion.div>
-        <ScrollForMore />
       </motion.section>
     </>
   );
