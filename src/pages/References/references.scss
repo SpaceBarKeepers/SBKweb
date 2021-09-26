@@ -12,7 +12,9 @@
   overflow: visible;
   z-index: 2;
   background: transparent;
-
+  @media (min-width: 500px) {
+    height: 115vh;
+  }
   & h1 {
     margin: 12px auto 0 auto;
     text-align: center;
