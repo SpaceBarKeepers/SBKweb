@@ -3,16 +3,15 @@
   margin: 0 auto;
   overflow: visible;
 
-  .iDframe {
-    width: 850px;
-    height: 100%;
+  .frame {
+    width: 1800px;
+    height: auto;
     margin: 0 auto;
     position: relative;
     z-index: -1;
 
     img {
-      max-width: 1800px;
-
+      width: 100%;
     }
   }
 }

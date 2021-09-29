@@ -55,6 +55,9 @@ function AboutUs() {
                 />
               </div>
               <p className="aboutUs_text">{textJSON.aboutUs.bara}</p>
+              <a className="aboutUs_web" href="https://baramaresova.com">
+                baramaresova.com
+              </a>
             </div>
             <div>
               <h3>Kája</h3>{' '}
