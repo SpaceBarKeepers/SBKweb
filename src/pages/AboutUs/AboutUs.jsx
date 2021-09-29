@@ -55,7 +55,12 @@ function AboutUs() {
                 />
               </div>
               <p className="aboutUs_text">{textJSON.aboutUs.bara}</p>
-              <a className="aboutUs_web" href="https://baramaresova.com">
+              <a
+                className="aboutUs_web"
+                href={textJSON.contacts.bara.web}
+                target="_blank"
+                rel="noreferrer"
+              >
                 baramaresova.com
               </a>
             </div>
@@ -70,6 +75,14 @@ function AboutUs() {
                 />
               </div>
               <p className="aboutUs_text">{textJSON.aboutUs.karel}</p>
+              <a
+                className="aboutUs_web"
+                href={textJSON.contacts.kaja.web}
+                target="_blank"
+                rel="noreferrer"
+              >
+                kareldohnal.io
+              </a>
             </div>
           </div>
         </main>

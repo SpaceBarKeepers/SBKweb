@@ -21,15 +21,7 @@ export const Contacts = () => {
             <span>
               <strong>Adresa:</strong> {textJSON.contacts.bara.adresa}
             </span>
-            <span>
-              <a
-                href={textJSON.contacts.bara.web}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Osobní web
-              </a>
-            </span>
+          
           </div>
           <div className="contacts_one">
             <h3>{textJSON.contacts.kaja.name}</h3>
@@ -46,15 +38,7 @@ export const Contacts = () => {
             <span>
               <strong>Adresa:</strong> {textJSON.contacts.kaja.adresa}
             </span>
-            <span>
-              <a
-                href={textJSON.contacts.kaja.web}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Osobní web
-              </a>
-            </span>
+            
           </div>
         </div>
     </>

@@ -71,7 +71,10 @@
   }
   &_mainIngredients,
   &_somethingExtra {
-    flex-basis: 45%;
+    width: 100%;
+    @media (min-width: 1100px) {
+      flex-basis: 45%;
+    }
     & h4 {
       font-size: 16px;
       font-family: 'Encode Sans Expanded', sans-serif;
