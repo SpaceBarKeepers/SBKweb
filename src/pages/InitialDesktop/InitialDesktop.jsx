@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import rocket from '../../images/graphics/RaketaNosign.webp';
+import rocket from '../../images/graphics/RaketaNosign.png';
 import './initialDesktop.scss';
 import Navbar from '../../components/Navbar/Navbar';
 import { Link } from 'react-router-dom';
