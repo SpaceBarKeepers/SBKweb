@@ -26,7 +26,7 @@ function Navbar() {
             />
           </>
         }
-        handleClick={() => push('/')}
+        navTo="/"
       />
       <MenuButton
         buttonName={
@@ -36,7 +36,7 @@ function Navbar() {
             <p className="menuBtnName">Co děláme</p>{' '}
           </>
         }
-        handleClick={() => push('/codelame')}
+        navTo="/codelame"
       />
       <MenuButton
         buttonName={
@@ -45,7 +45,7 @@ function Navbar() {
             <p className="menuBtnName">Reference</p>
           </>
         }
-        handleClick={() => push('/reference')}
+        navTo="/reference"
       />
       <MenuButton
         buttonName={
@@ -54,7 +54,7 @@ function Navbar() {
             <p className="menuBtnName">O nás</p>
           </>
         }
-        handleClick={() => push('/onas')}
+        navTo="/onas"
       />
       <MenuButton
         buttonName={
@@ -63,7 +63,7 @@ function Navbar() {
             <p className="menuBtnName">Kontakt</p>
           </>
         }
-        handleClick={() => push('/kontakty')}
+        navTo="/kontakty"
       />
     </section>
   );

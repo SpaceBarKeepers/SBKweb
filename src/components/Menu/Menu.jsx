@@ -3,6 +3,7 @@ import menuSign from '../../images/graphics/menuSign.png';
 import menuGraphics from '../../images/graphics/menuGraphics.png';
 import textJSON from '../../texts.json';
 import './menu.scss';
+import Order from '../Order/Order';
 
 export const Menu = () => {
   return (
@@ -74,6 +75,7 @@ export const Menu = () => {
           <h4>+</h4>
           <p>{textJSON.whatWeDo.somethingExtra.plus}</p>
         </div>
+        <Order />
       </main>
       <div className="menu_bottom">
         <img src={menuGraphics} alt="" />

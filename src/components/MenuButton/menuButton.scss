@@ -10,6 +10,8 @@
   margin: 0;
   width: 100%;
   padding: 8px 0;
+  text-decoration: none;
+  text-align: center;
   @media (min-width: 500px) {
     padding: 8px 16px;
     border-radius: 8px;
@@ -22,8 +24,7 @@
 
 .yesHover {
   @media (min-width: 500px) {
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: $raspberry;
     }
   }
