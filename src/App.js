@@ -7,7 +7,8 @@ import References from './pages/References/References';
 import AboutUs from './pages/AboutUs/AboutUs';
 import ContactPage from './pages/ContactPage/ContactPage';
 import InitialDesktop from './pages/InitialDesktop/InitialDesktop';
-import {BrowserRouter} from "react-router-dom";
+import { BrowserRouter } from 'react-router-dom';
+import { Contacts } from './components/Contacts/Contacts';
 
 function App() {
   const [wideScreen, setWideScreen] = useState(false);
@@ -39,28 +40,31 @@ function App() {
   return (
     <AnimatePresence exitBeforeEnter>
       <BrowserRouter>
-      <ScrollToTop />
+        <ScrollToTop />
 
-      <Switch>
-        <Route path="/onas">
-          <AboutUs />
-        </Route>
-        <Route path="/codelame">
-          <WhatWeDo />
-        </Route>
-        <Route path="/reference">
-          <References />
-        </Route>
-        <Route path="/kontakty">
-          <ContactPage />
-        </Route>
-        <Route path="/home">
-          <InitialDesktop />
-        </Route>
-        <Route path="/">
-          {wideScreen ? <InitialDesktop /> : <LandingPage />}
-        </Route>
-      </Switch>
+        <Switch>
+          <Route path="/onas">
+            <AboutUs />
+          </Route>
+          <Route path="/codelame">
+            <WhatWeDo />
+          </Route>
+          <Route path="/reference">
+            <References />
+          </Route>
+          <Route path="/kontakty/info">
+            <Contacts />
+          </Route>
+          <Route path="/kontakty">
+            <ContactPage />
+          </Route>
+          <Route path="/home">
+            <InitialDesktop />
+          </Route>
+          <Route path="/">
+            {wideScreen ? <InitialDesktop /> : <LandingPage />}
+          </Route>
+        </Switch>
       </BrowserRouter>
     </AnimatePresence>
   );

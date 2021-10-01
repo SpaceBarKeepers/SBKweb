@@ -13,6 +13,9 @@
   @media (min-width: 500px) {
     background: none;
   }
+  @media (min-width: 1100px) {
+    margin: 120px auto;
+  }
 
   & h1 {
     margin: 12px auto 0 auto;
@@ -86,6 +89,7 @@
   padding: 0 24px;
   @media (min-width: 1100px) {
     text-align: center;
+    align-self: center;
     font-size: 20px;
     line-height: 30px;
   }

@@ -14,12 +14,31 @@ import dkck from '../../images/references/DKCK.png';
 import screen from '../../images/graphics/Platno.png';
 import '@brainhubeu/react-carousel/lib/style.css';
 import './references.scss';
+import Footer from '../../components/Footer/Footer';
 
 const referencesVariants = {
   hidden: { x: '-100vw' },
   animate: {
     x: 0,
     transition: { duration: 0.5, type: 'tween' },
+    when: 'beforeChildren',
+    staggerChildren: 0.4,
+    staggerDirection: -1,
+  },
+};
+
+const clickMeVariants = {
+  start: { scale: 0.5 },
+  animate: {
+    scale: 1,
+    transition: {
+      repeat: 6,
+      duration: 0.9,
+      type: 'spring',
+      bounce: 0.7,
+      ease: 'easeInOut',
+      stiffness: 50,
+    },
   },
 };
 
@@ -51,7 +70,10 @@ function References() {
                   resolve: arrowsPlugin,
                   options: {
                     arrowLeft: (
-                      <button
+                      <motion.button
+                        variants={clickMeVariants}
+                        initial="start"
+                        animate="animate"
                         style={{
                           border: 'none',
                           backgroundColor: 'transparent',
@@ -67,10 +89,13 @@ function References() {
                           src={left}
                           alt="šipka doleva"
                         />
-                      </button>
+                      </motion.button>
                     ),
                     arrowLeftDisabled: (
-                      <button
+                      <motion.button
+                        variants={clickMeVariants}
+                        initial="start"
+                        animate="animate"
                         style={{
                           border: 'none',
                           backgroundColor: 'transparent',
@@ -86,10 +111,13 @@ function References() {
                           src={left}
                           alt="šedá šipka doleva"
                         />{' '}
-                      </button>
+                      </motion.button>
                     ),
                     arrowRight: (
-                      <button
+                      <motion.button
+                        variants={clickMeVariants}
+                        initial="start"
+                        animate="animate"
                         style={{
                           border: 'none',
                           backgroundColor: 'transparent',
@@ -105,10 +133,13 @@ function References() {
                           src={right}
                           alt="šipka doprava"
                         />{' '}
-                      </button>
+                      </motion.button>
                     ),
                     arrowRightDisabled: (
-                      <button
+                      <motion.button
+                        variants={clickMeVariants}
+                        initial="start"
+                        animate="animate"
                         style={{
                           border: 'none',
                           backgroundColor: 'transparent',
@@ -124,7 +155,7 @@ function References() {
                           src={right}
                           alt="šedá šipka doprava"
                         />{' '}
-                      </button>
+                      </motion.button>
                     ),
                     addArrowClickHandler: true,
                   },
@@ -164,6 +195,7 @@ function References() {
           />
         </div>
       </motion.div>
+      <Footer />
     </>
   );
 }

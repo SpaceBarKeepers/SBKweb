@@ -8,6 +8,7 @@ import kaja from '../../images/photos/kaja.webp';
 import textJSON from '../../texts.json';
 import window from '../../images/graphics/Window.png';
 import './aboutUs.scss';
+import Footer from '../../components/Footer/Footer';
 
 const aboutUsVariants = {
   hidden: { x: '100vw' },
@@ -89,6 +90,7 @@ function AboutUs() {
         {/*         <div className="graphics_rocket"></div>
          */}{' '}
       </motion.div>{' '}
+      <Footer />
     </>
   );
 }

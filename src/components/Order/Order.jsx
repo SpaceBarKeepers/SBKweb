@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import close from '../../images/icons/close.svg';
+import apiKey from '../../emailJsKey';
+import emailjs from '../../emailJsKey';
 import './order.scss';
 
 function Order() {
@@ -15,12 +18,7 @@ function Order() {
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
-      .sendForm(
-        apiKey.SERVICE_ID,
-        apiKey.TEMPLATE_ID_REG,
-        e.target,
-        apiKey.USER_ID,
-      )
+      .sendForm(apiKey.SERVICE_ID, apiKey.TEMPLATE_ID, e.target, apiKey.USER_ID)
       .then(
         () => {
           handleClickOpen();
@@ -39,8 +37,13 @@ function Order() {
       </button>
       {open && (
         <form id="contactForm" className="contactForm" onSubmit={handleSubmit}>
-          <h3>Napište nám</h3>
-          <div>
+          <div className="contactForm_header">
+            <h3>Napište nám</h3>
+            <button onClick={handleClickClose}>
+              <img src={close} alt="" />
+            </button>
+          </div>
+          <div className="contactForm_inputs">
             <label htmlFor="email">
               Email:
               <br />

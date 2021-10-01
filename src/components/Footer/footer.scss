@@ -1,0 +1,48 @@
+@import '../../sass/colors';
+
+.footer {
+  display: none;
+  @media (min-width: 1100px) {
+    z-index: 10;
+    background-color: $black;
+    color: $white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1500px;
+    padding: 12px 24px;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+    font-size: 18px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  &_contact {
+    flex-basis: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & a {
+      text-decoration: none;
+      color: $white;
+      &:hover {
+        color: $yellow;
+      }
+    }
+  }
+  &_some {
+    flex-basis: 15%;
+    display: flex;
+    justify-content: space-around;
+    &Link {
+      border-radius: 50%;
+      border: 1px solid transparent;
+      padding: 11px;
+    }
+    &Link:hover {
+      border: 1px solid $raspberry;
+    }
+  }
+}

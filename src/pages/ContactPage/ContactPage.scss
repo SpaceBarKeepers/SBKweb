@@ -15,6 +15,23 @@
     background-repeat: no-repeat;
     background-size: 100%;
   }
+  @media (min-width: 1400px) {
+    background-size: 80%;
+  }
+  & h1 {
+    @media (min-width: 1100px) {
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      text-align: center;
+      text-shadow: 2px 0px 2px rgba(158, 0, 89, 0.42);
+      letter-spacing: 2px;
+    }
+    @media (min-width: 1400px) {
+      top: 10%;
+    }
+  }
 }
 
 .graphics_div {
@@ -56,7 +73,7 @@
   font-size: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   background-color: $purple;
   padding: 12px;
@@ -67,15 +84,17 @@
     height: auto;
     font-size: 22px;
   }
-
   @media (min-width: 1100px) {
     max-width: 1500px;
     width: 100%;
-    height: 270px;
+    height: 200px;
     align-items: center;
     margin: 0 auto;
     overflow: scroll;
     padding: 0;
+  }
+  @media (min-width: 1500px) {
+    height: 270px;
   }
   & h1 {
     text-align: center;
@@ -101,6 +120,22 @@
       color: $yellow;
     }
   }
+  & .contacts_both {
+    @media (min-width: 1100px) {
+      display: none;
+    }
+  }
+  & .footer_some {
+    width: 50%;
+    margin: 16px 0;
+
+    @media (min-width: 1100px) {
+      display: none;
+    }
+  }
+  & .navbar {
+    display: none;
+  }
 }
 
 .contact_email,
@@ -109,25 +144,25 @@
   @media (min-width: 500px) {
     margin: 12px 0;
   }
+  @media (min-width: 1100px) {
+    font-size: 22px;
+  }
+  @media (min-width: 1400px) {
+    font-size: 26px;
+  }
 }
-.scroll-for-more {
+
+.contact_moreDetails {
   display: none;
   @media (min-width: 1100px) {
     display: block;
-    //position: absolute;
-    //bottom: 310px;
-    //left: 200px;
-    z-index: 20;
-    .icon {
-      svg {
-        height: auto;
-        width: 28px;
-      }
-    }
-    .text {
-      margin-top: 8px;
-      color: $white;
-      text-transform: uppercase;
-    }
+    margin: 6px;
+    font-size: 14px;
+  }
+  @media (min-width: 1100px) {
+    font-size: 16px;
+  }
+  @media (min-width: 1600px) {
+    margin: 18px 0 0 0;
   }
 }

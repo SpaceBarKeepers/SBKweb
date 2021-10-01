@@ -7,12 +7,13 @@ import contact from '../../images/icons/contacts.png';
 import references from '../../images/icons/referenceWhite.png';
 import logo from '../../images/logo/white_long.png';
 import products from '../../images/icons/product.png';
+import logoShort from '../../images/logo/white_short.svg';
 import './navbar.scss';
 
 function Navbar() {
   const { push } = useHistory();
   return (
-    <section className="navbar">
+    <nav className="navbar">
       <MenuButton
         hover="noHover"
         buttonName={
@@ -24,6 +25,7 @@ function Navbar() {
               src={logo}
               alt="logo"
             />
+            <img className="menuLogo_short" src={logoShort} alt="" />
           </>
         }
         navTo="/"
@@ -65,7 +67,7 @@ function Navbar() {
         }
         navTo="/kontakty"
       />
-    </section>
+    </nav>
   );
 }
 
