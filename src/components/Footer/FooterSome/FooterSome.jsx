@@ -10,7 +10,7 @@ function FooterSome() {
       <a className="footer_someLink" href="" target="_blank" rel="noreferrer">
         <img src={fb} alt="" />
       </a>
-      <a className="footer_someLink" href="" target="_blank" rel="noreferrer">
+      <a className="footer_someLink" href="https://twitter.com/spacebarkeepers" target="_blank" rel="noreferrer">
         <img src={twitter} alt="" />
       </a>
       <a
