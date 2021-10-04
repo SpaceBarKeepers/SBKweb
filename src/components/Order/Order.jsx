@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import close from '../../images/icons/close.svg';
 import apiKey from '../../emailJsKey';
-import emailjs from '../../emailJsKey';
+import emailjs from 'emailjs-com';
 import './order.scss';
 
 function Order() {
@@ -16,6 +16,7 @@ function Order() {
   };
 
   const handleSubmit = (e) => {
+    handleClickClose()
     e.preventDefault();
     emailjs
       .sendForm(apiKey.SERVICE_ID, apiKey.TEMPLATE_ID, e.target, apiKey.USER_ID)
@@ -51,10 +52,10 @@ function Order() {
             </label>
             <label htmlFor="message">
               Zpráva: <br />
-              <textarea type="textarea" id="message" name="message" />
+              <textarea id="message" name="message" />
             </label>
           </div>
-          <button className="sendBtn" type="submit" onClick={handleClickClose}>
+          <button className="sendBtn" type="submit">
             Odeslat
           </button>
         </form>
