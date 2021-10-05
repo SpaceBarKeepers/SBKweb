@@ -157,13 +157,13 @@ function References() {
                 refName="Dámský klub Český Krumlov"
                 refDetails="Vytvoření kompletního webu na míru."
                 refImg={dkck}
-                refHref="http://damskyklubck.cz"
+                refHref="https://damskyklubck.cz"
               />
               <ReferenceItem
                 refName="SKP Hvězda Jirkov"
                 refDetails="Vytvoření kompletního webu na míru a vlastní grafika."
                 refImg={skp}
-                refHref="http://jkakaratejirkov.cz"
+                refHref="https://jkakaratejirkov.cz"
               />
               <ReferenceItem
                 refName="ConsultVision"
