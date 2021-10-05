@@ -40,6 +40,9 @@
       border-radius: 50%;
       border: 1px solid transparent;
       padding: 11px;
+      & img {
+        vertical-align: bottom;
+      }
     }
     &Link:hover {
       border: 1px solid $raspberry;
