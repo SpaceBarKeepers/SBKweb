@@ -15,6 +15,7 @@ import screen from '../../images/graphics/Platno.png';
 import '@brainhubeu/react-carousel/lib/style.css';
 import './references.scss';
 import Footer from '../../components/Footer/Footer';
+import NavbarMobile from '../../components/Navbar/NavbarMobile';
 
 const referencesVariants = {
   hidden: { x: '-100vw' },
@@ -28,14 +29,12 @@ const referencesVariants = {
 };
 
 const clickMeVariants = {
-  start: { scale: 0.5 },
+  start: { opacity: 0 },
   animate: {
-    scale: 1,
+    opacity: 1,
     transition: {
       repeat: 6,
-      duration: 0.9,
-      type: 'spring',
-      bounce: 0.7,
+      duration: 0.8,
       ease: 'easeInOut',
       stiffness: 50,
     },
@@ -46,6 +45,7 @@ function References() {
   return (
     <>
       <Navbar />
+      <NavbarMobile />
       <motion.div
         variants={referencesVariants}
         initial="hidden"
@@ -81,11 +81,7 @@ function References() {
                         }}
                       >
                         <img
-                          style={{
-                            marginLeft: '0',
-                            width: '24px',
-                            height: '24px',
-                          }}
+                          className="arrowIcon"
                           src={left}
                           alt="šipka doleva"
                         />
@@ -103,11 +99,7 @@ function References() {
                         }}
                       >
                         <img
-                          style={{
-                            marginLeft: '0',
-                            width: '24px',
-                            height: '24px',
-                          }}
+                          className="arrowIcon"
                           src={left}
                           alt="šedá šipka doleva"
                         />{' '}
@@ -125,11 +117,7 @@ function References() {
                         }}
                       >
                         <img
-                          style={{
-                            marginRight: '0',
-                            width: '24px',
-                            height: '24px',
-                          }}
+                          className="arrowIcon"
                           src={right}
                           alt="šipka doprava"
                         />{' '}
@@ -147,11 +135,7 @@ function References() {
                         }}
                       >
                         <img
-                          style={{
-                            marginRight: '0',
-                            width: '24px',
-                            height: '24px',
-                          }}
+                          className="arrowIcon"
                           src={right}
                           alt="šedá šipka doprava"
                         />{' '}

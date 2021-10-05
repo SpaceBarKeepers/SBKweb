@@ -5,6 +5,7 @@ import { Header } from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import './whatWeDo.scss';
 import { Menu } from '../../components/Menu/Menu';
+import NavbarMobile from '../../components/Navbar/NavbarMobile';
 
 const wwdVariants = {
   hidden: { y: '100vh' },
@@ -18,6 +19,7 @@ function WhatWeDo() {
   return (
     <>
       <Navbar />
+      <NavbarMobile />
       <motion.div
         className="whatWeDo_section"
         variants={wwdVariants}

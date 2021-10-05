@@ -7,11 +7,13 @@ import './ContactPage.scss';
 import Footer from '../../components/Footer/Footer.jsx';
 import { Contacts } from '../../components/Contacts/Contacts.jsx';
 import FooterSome from '../../components/Footer/FooterSome/FooterSome.jsx';
+import NavbarMobile from '../../components/Navbar/NavbarMobile.jsx';
 
 function ContactPage() {
   return (
     <>
       <Navbar />
+      <NavbarMobile />
       <motion.section
         className="contacts_section"
         initial={{ y: '100vh' }}

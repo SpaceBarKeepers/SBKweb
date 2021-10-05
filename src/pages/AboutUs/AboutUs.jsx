@@ -9,6 +9,7 @@ import textJSON from '../../texts.json';
 import window from '../../images/graphics/Window.png';
 import './aboutUs.scss';
 import Footer from '../../components/Footer/Footer';
+import NavbarMobile from '../../components/Navbar/NavbarMobile';
 
 const aboutUsVariants = {
   hidden: { x: '100vw' },
@@ -24,6 +25,7 @@ function AboutUs() {
   return (
     <>
       <Navbar />
+      <NavbarMobile />
       <motion.div
         variants={aboutUsVariants}
         initial="hidden"

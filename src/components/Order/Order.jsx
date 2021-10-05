@@ -34,7 +34,7 @@ function Order() {
   return (
     <>
       <button className="orderBtn" onClick={handleClickOpen}>
-        Namíchat
+        Napište nám
       </button>
       {open && (
         <form id="contactForm" className="contactForm" onSubmit={handleSubmit}>

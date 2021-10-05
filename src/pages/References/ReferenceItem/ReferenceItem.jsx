@@ -21,7 +21,7 @@ function ReferenceItem(props) {
     visible: {
       opacity: 1,
       backgroundColor: 'rgba(158, 0, 89, 0.9)',
-      transition: { duration: 1.1, delay: 0.5 },
+      transition: { duration: 1.1, delay: 1.5 },
     },
   };
 
