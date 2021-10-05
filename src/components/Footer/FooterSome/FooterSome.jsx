@@ -7,11 +7,11 @@ import ig from '../../../images/icons/ig.svg';
 function FooterSome() {
   return (
     <div className="footer_some">
-      <a className="footer_someLink" href="" target="_blank" rel="noreferrer">
-        <img src={fb} alt="" />
+      <a className="footer_someLink" href="https://www.facebook.com/spacebarkeepers/" target="_blank" rel="noreferrer">
+        <img src={fb} alt="facebook logo" />
       </a>
       <a className="footer_someLink" href="https://twitter.com/spacebarkeepers" target="_blank" rel="noreferrer">
-        <img src={twitter} alt="" />
+        <img src={twitter} alt="twitter logo" />
       </a>
       <a
         className="footer_someLink"
@@ -19,10 +19,10 @@ function FooterSome() {
         target="_blank"
         rel="noreferrer"
       >
-        <img src={li} alt="" />
+        <img src={li} alt="linkedin logo" />
       </a>
-      <a className="footer_someLink" href="" target="_blank" rel="noreferrer">
-        <img src={ig} alt="" />
+      <a className="footer_someLink" href="https://www.instagram.com/spacebarkeepers/" target="_blank" rel="noreferrer">
+        <img src={ig} alt="instagram logo" />
       </a>
     </div>
   );
