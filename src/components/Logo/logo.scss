@@ -3,4 +3,9 @@
   & img {
     max-width: 100%;
   }
+  &_short {
+    @media (min-width: 1100px) {
+      display: none;
+    }
+  }
 }

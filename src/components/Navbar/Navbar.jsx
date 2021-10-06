@@ -1,10 +1,12 @@
 import React from 'react';
 import MenuButton from '../MenuButton/MenuButton';
+import Logo from '../Logo/Logo';
 import './navbar.scss';
 
 function Navbar() {
   return (
     <nav className="navbar">
+      <Logo />
       <MenuButton
         buttonName={
           <>
