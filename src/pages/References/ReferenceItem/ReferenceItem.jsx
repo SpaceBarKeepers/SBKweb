@@ -36,15 +36,7 @@ function ReferenceItem(props) {
         className="referenceItem"
         style={{ backgroundImage: `url(${props.refImg})` }}
       >
-       {/*  <motion.div
-          ref={ref}
-          className="referenceContent"
-          initial="hidden"
-          animate={controls}
-          variants={referenceItemVariants}
-        >
-          <h3>{props.refName}</h3>
-        </motion.div> */}
+        <div ref={ref} className="referenceContent"></div>
       </div>
     </a>
   );

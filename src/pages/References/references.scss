@@ -88,13 +88,10 @@
 
   @media (min-width: 500px) {
     width: 80%;
-    height: 100%;
   }
   &__container {
-    @media (min-width: 500px) {
-      height: 280px;
-      overflow: visible;
-    }
+    height: 280px;
+    overflow: visible;
     @media (min-width: 768px) {
       height: 405px;
     }
@@ -103,9 +100,7 @@
     }
   }
   &Item {
-    @media (min-width: 500px) {
-      height: 260px;
-    }
+    height: 260px;
     @media (min-width: 768px) {
       height: 400px;
     }
