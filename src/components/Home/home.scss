@@ -1,0 +1,22 @@
+.homeSection {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-image: url('../../images/graphics/bar_mobile.png');
+  @media (min-width: 500px) {
+    background-image: url('../../images/graphics/Tablet2.webp');
+  }
+  @media (min-width: 690px) {
+    height: 120vh;
+  }
+  @media (min-width: 870px) {
+    height: 140vh;
+  }
+  @media (min-width: 980px) {
+    height: 155vh;
+  }
+  @media (min-width: 1100px) {
+    display: none;
+  }
+}
