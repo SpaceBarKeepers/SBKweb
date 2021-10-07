@@ -11,6 +11,9 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  @media (min-width: 1100px) {
+    background-position: top;
+  }
 
   &Href {
     width: 100%;
@@ -18,10 +21,14 @@
     text-decoration: none;
     display: flex;
     justify-content: center;
+    @media (min-width: 1100px) {
+      align-items: center;
+      height: 580px;
+    }
   }
 }
 
-.referenceContent {
+/* .referenceContent {
   padding: 8px;
   text-align: center;
   border-radius: 16px;
@@ -37,7 +44,7 @@
     }
   }
   @media (min-width: 1100px) {
-    height: 10%;
+    height: 100%;
     width: 50%;
     font-size: 20px;
     display: flex;
@@ -45,4 +52,4 @@
     align-items: center;
     justify-content: center;
   }
-}
+} */
