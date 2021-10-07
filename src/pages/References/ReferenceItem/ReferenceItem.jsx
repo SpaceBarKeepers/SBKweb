@@ -20,7 +20,7 @@ function ReferenceItem(props) {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      backgroundColor: 'rgba(158, 0, 89, 0.9)',
+      backgroundColor: 'rgba(236, 212, 68, 0.3)',
       transition: { duration: 1.1, delay: 1.5 },
     },
   };
@@ -44,7 +44,6 @@ function ReferenceItem(props) {
           variants={referenceItemVariants}
         >
           <h3>{props.refName}</h3>
-          <p>{props.refDetails}</p>
         </motion.div>
       </div>
     </a>
