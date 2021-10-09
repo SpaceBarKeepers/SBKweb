@@ -1,0 +1,11 @@
+.landingPage_div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 50px 0;
+
+  @media (min-width: 500px) {
+    padding: 0;
+    height: 100%;
+  }
+}

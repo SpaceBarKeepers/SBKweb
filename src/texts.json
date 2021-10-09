@@ -1,0 +1,45 @@
+{
+  "aboutUs": {
+    "mainText": "Jsme Bára a Kája a na začátku roku 2021 jsme založili Space Bar Keepers, vývojářský kolektiv zaměřující se na webové aplikace a prezentace. Máme rádi moderní programovací jazyky a technologie a rádi si navrhujeme vlastní designy i technická řešení.",
+    "bara": "Bára má za sebou letité zkušenosti z obchodnické branže, během rodičovské dovolené se ale rozhodla pro změnu a absolvovala Digitální akademii: Web od Czechitas, kde se zamilovala do Reactu a frontendového vývoje. Bára má silné vizuální cítění a smysl pro neotřelé nápady. Dále studuje UX Design a SEO, ráda běhá a vaří.",
+    "karel": "Kája se také téměř dekádu pohyboval v obchodnickém prostředí, ačkoliv na analytických pozicích. Jeho změna profesního oboru směrem k webovému a softwarovému vývoji byla plánovaná delší dobu. Kája má nadání pro řešení problémů a smysl pro detail. Dále studuje zabezpečení IT systémů, rád se toulá přírodou a čte."
+  },
+  "whatWeDo": {
+    "mainText": "Svým zákazníkům nabízíme webové prezentace a webové aplikace na klíč od prvotního designu až po nasazení a provozní správu. Využíváme nejnovější technologie a trendy, vyznačujeme se otevřenou komunikací a proaktivním přístupem. Weby nás baví! Pojďme se pobavit i o tom vašem.",
+    "mainIngredients": {
+      "designNaMiru": "Nechceme, aby váš web vypadal, jako web vašeho souseda.",
+      "responzivniWeb": "Mobil nebo PeCko - zobrazíme všecko.",
+      "optimalizaceWebu": "Rychlý a spolehlivý web díky nejmodernějším technologiím.",
+      "adminProstrediNaMiru": "Zapomeňte na Wordpress. Zvolte cestu jednoduchosti a moderního designu.",
+      "uzivatelskaZkusenost": "Postaráme se o to, aby uživatelé měli váš web rádi.",
+      "individualniPristup": "Celým procesem tvorby webu procházíme společně."
+    },
+    "somethingExtra": {
+      "branding": "Nakreslíme grafické prvky v souladu s identitou vaší značky nebo vytvoříme zcela novou.",
+      "spravaWebu": "Postaráme se o to, aby váš web byl stále aktuální.",
+      "spravaHostingovychSluzeb": "S námi nemusíte ani vědět, co to je hosting.",
+      "nastaveniSEO": "Nenecháme váš web zapadnout v hlubinách internetu!",
+      "obchodniZkusenosti": "Společně vytvoříme web, který prodává.",
+      "analytickeZkusenosti": "Hromady dat nám nejsou cizí. Rádi vám pomůžeme s jejich vizualizací.",
+      "plus": "přísada dle vašeho výběru"
+    }
+  },
+  "contacts": {
+    "bara": {
+      "name": "Bára Marešová",
+      "ic": "09833340",
+      "phone": "+420 601 563 231",
+      "email": "bara@spacebarkeepers.com",
+      "adresa": "Herlíkovická 1000/24, Praha 197 00",
+      "web": "https://baramaresova.com"
+    },
+    "kaja": {
+      "name": "Karel Dohnal",
+      "ic": "75241439",
+      "phone": "+420 602 235 137",
+      "email": "karel@spacebarkeepers.com",
+      "adresa": "Káranská 340/30, Praha 108 00",
+      "web": "https://kareldohnal.github.io"
+    }
+  }
+}

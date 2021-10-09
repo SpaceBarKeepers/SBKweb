@@ -1,0 +1,9 @@
+import React from 'react';
+import './home.scss';
+
+export const Home = () => {
+  return (
+    <section className="homeSection">
+    </section>
+  );
+};
