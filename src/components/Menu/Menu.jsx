@@ -39,7 +39,7 @@ export const Menu = () => {
               <p>{textJSON.whatWeDo.mainIngredients.uzivatelskaZkusenost}</p>
             </div>
             <div>
-              <h4>Invividuální přístup</h4>
+              <h4>Individuální přístup</h4>
               <p>{textJSON.whatWeDo.mainIngredients.individualniPristup}</p>
             </div>
           </div>
