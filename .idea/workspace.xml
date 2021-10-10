@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2de30331-39d5-451e-9f2f-93e424e55179" name="Changes" comment="" />
+    <list default="true" id="2de30331-39d5-451e-9f2f-93e424e55179" name="Changes" comment="Menu fix" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,6 +60,29 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2de30331-39d5-451e-9f2f-93e424e55179" name="Changes" comment="" />
+      <created>1633775557988</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1633775557988</updated>
+      <workItem from="1633775560688" duration="823000" />
+    </task>
+    <task id="LOCAL-00001" summary=".idea">
+      <created>1633775577513</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1633775577514</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Menu fix">
+      <created>1633775778624</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1633775778624</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -76,5 +99,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=".idea" />
+    <MESSAGE value="Menu fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Menu fix" />
   </component>
 </project>
