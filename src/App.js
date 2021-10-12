@@ -12,8 +12,13 @@ import { Contacts } from './components/Contacts/Contacts';
 
 function App() {
   const [wideScreen, setWideScreen] = useState(false);
+  const [isSafari, setIsSafari] = useState(false)
   const ScrollToTop = () => {
     const { pathname } = useLocation();
+
+    useEffect(() => {
+      if ( /^((?!chrome|android).)*safari/i.test(navigator.userAgent)) setIsSafari(true);
+    }, [])
 
     useEffect(() => {
       window.scrollTo(0, 0);
@@ -62,7 +67,7 @@ function App() {
             <InitialDesktop />
           </Route>
           <Route path="/">
-            {wideScreen ? <InitialDesktop /> : <LandingPage />}
+            {wideScreen && !isSafari ? <InitialDesktop /> : <LandingPage />}
           </Route>
         </Switch>
       </BrowserRouter>
