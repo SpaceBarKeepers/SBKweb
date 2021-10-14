@@ -16,6 +16,7 @@ import '@brainhubeu/react-carousel/lib/style.css';
 import './references.scss';
 import Footer from '../../components/Footer/Footer';
 import NavbarMobile from '../../components/Navbar/NavbarMobile';
+import { Helmet } from 'react-helmet';
 
 const referencesVariants = {
   hidden: { x: '-100vw' },
@@ -44,6 +45,10 @@ const clickMeVariants = {
 function References() {
   return (
     <>
+      {' '}
+      <Helmet>
+        <title>SpaceBarKeepers - reference</title>
+      </Helmet>
       <Navbar />
       <NavbarMobile />
       <motion.div

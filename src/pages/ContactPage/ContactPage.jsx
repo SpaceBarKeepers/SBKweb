@@ -8,10 +8,14 @@ import Footer from '../../components/Footer/Footer.jsx';
 import { Contacts } from '../../components/Contacts/Contacts.jsx';
 import FooterSome from '../../components/Footer/FooterSome/FooterSome.jsx';
 import NavbarMobile from '../../components/Navbar/NavbarMobile.jsx';
+import {Helmet} from "react-helmet";
 
 function ContactPage() {
   return (
     <>
+    <Helmet>
+        <title>SpaceBarKeepers - kontakty</title>
+      </Helmet>
       <Navbar />
       <NavbarMobile />
       <motion.section

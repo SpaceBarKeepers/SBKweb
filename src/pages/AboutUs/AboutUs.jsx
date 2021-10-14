@@ -9,6 +9,7 @@ import textJSON from '../../texts.json';
 import window from '../../images/graphics/Window.png';
 import './aboutUs.scss';
 import Footer from '../../components/Footer/Footer';
+import { Helmet } from 'react-helmet';
 import NavbarMobile from '../../components/Navbar/NavbarMobile';
 
 const aboutUsVariants = {
@@ -24,6 +25,10 @@ const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
 function AboutUs() {
   return (
     <>
+      <Helmet>
+        <title>SpaceBarKeepers - kdo jsme</title>
+        <meta name="description" content="Vývojářský kolektiv, který vznikl na začátku roku 2021." />
+      </Helmet>
       <Navbar />
       <NavbarMobile />
       <motion.div

@@ -5,6 +5,7 @@ import { Header } from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import './whatWeDo.scss';
 import { Menu } from '../../components/Menu/Menu';
+import { Helmet } from 'react-helmet';
 import NavbarMobile from '../../components/Navbar/NavbarMobile';
 
 const wwdVariants = {
@@ -18,6 +19,10 @@ const wwdVariants = {
 function WhatWeDo() {
   return (
     <>
+     <Helmet>
+        <title>SpaceBarKeepers - co děláme</title>
+        <meta name="description" content="Zaměřujeme se na webové aplikace a prezentace s vlastním designem." />
+      </Helmet>
       <Navbar />
       <NavbarMobile />
       <motion.div
