@@ -9,16 +9,18 @@ import ContactPage from './pages/ContactPage/ContactPage';
 import InitialDesktop from './pages/InitialDesktop/InitialDesktop';
 import { BrowserRouter } from 'react-router-dom';
 import { Contacts } from './components/Contacts/Contacts';
+import { CookiesPolicy } from './pages/CookiesPolicy/CookiesPolicy';
 
 function App() {
   const [wideScreen, setWideScreen] = useState(false);
-  const [isSafari, setIsSafari] = useState(false)
+  const [isSafari, setIsSafari] = useState(false);
   const ScrollToTop = () => {
     const { pathname } = useLocation();
 
     useEffect(() => {
-      if ( /^((?!chrome|android).)*safari/i.test(navigator.userAgent)) setIsSafari(true);
-    }, [])
+      if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent))
+        setIsSafari(true);
+    }, []);
 
     useEffect(() => {
       window.scrollTo(0, 0);
@@ -65,6 +67,9 @@ function App() {
           </Route>
           <Route path="/home">
             <InitialDesktop />
+          </Route>
+          <Route path="/cookies-policy">
+            <CookiesPolicy />
           </Route>
           <Route path="/">
             {wideScreen && !isSafari ? <InitialDesktop /> : <LandingPage />}
