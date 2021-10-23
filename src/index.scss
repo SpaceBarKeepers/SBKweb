@@ -49,11 +49,16 @@ h1 {
 
 /* stylování Cookies lišty */
 
-.cookieconsent-com---nb-simple {
-  width: 100%;
-  max-width: 100% !important;
+.cookieconsent-com---nb-headline {
+  @media (min-width: 1100px) {
+    max-width: 50% !important;
+    bottom: 0 !important;
+    left: 0 !important;
+  }
 }
-
-.cookieconsent-com---nb .cc-nb-main-containes {
+.cookieconsent-com---nb {
+  font-size: 14px !important;
+}
+.cookieconsent-com---nb .cc-nb-main-container {
   padding: 1rem !important;
 }
