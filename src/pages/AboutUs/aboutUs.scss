@@ -81,41 +81,43 @@
 }
 
 .window_graphics {
+  position: relative;
   max-width: 100%;
   align-self: center;
   justify-self: center;
   margin: 0 auto;
+  z-index: 100;
 }
 
 .window_photo {
-  width: 220px;
+  width: 240px;
   height: auto;
   border-radius: 50%;
   position: absolute;
   left: 50%;
-  margin-left: -110px;
+  margin-left: -120px;
   top: 50%;
-  margin-top: -110px;
+  margin-top: -120px;
   &Big {
-    width: 420px;
+    width: 480px;
     height: auto;
     border-radius: 50%;
     position: absolute;
     left: 50%;
-    margin-left: -210px;
+    margin-left: -240px;
     top: 50%;
-    margin-top: -210px;
+    margin-top: -240px;
     @media (max-width: 750px) {
-      width: 280px;
-      height: 280px;
-      margin-left: -140px;
-      margin-top: -140px;
+      width: 320px;
+      height: 320px;
+      margin-left: -160px;
+      margin-top: -160px;
     }
     @media (max-width: 400px) {
-      width: 220px;
-      height: 220px;
-      margin-left: -110px;
-      margin-top: -110px;
+      width: 240px;
+      height: 240px;
+      margin-left: -120px;
+      margin-top: -120px;
     }
   }
 }
