@@ -99,7 +99,7 @@ function AboutUs() {
           </div>
           <div className="aboutUs_windowBig">
             <img className="window_graphics" src={window} alt="okno" />
-            <img className="window_photoBig" src={us} alt="fotografie Báry" />
+            <img className="window_photoBig" src={us} alt="fotografie Báry a Káji" />
           </div>
         </main>
         {/*         <div className="graphics_rocket"></div>
