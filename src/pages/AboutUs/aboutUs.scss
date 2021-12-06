@@ -64,6 +64,20 @@
   height: 300px;
   position: relative;
   margin: 0 auto;
+  &Big {
+    position: relative;
+    margin: 0 auto;
+    width: 600px;
+    height: 600px;
+    @media (max-width: 750px) {
+      width: 400px;
+      height: 400px;
+    }
+    @media (max-width: 400px) {
+      width: 300px;
+      height: 300px;
+    }
+  }
 }
 
 .window_graphics {
@@ -74,14 +88,36 @@
 }
 
 .window_photo {
-  width: 200px;
+  width: 220px;
   height: auto;
   border-radius: 50%;
   position: absolute;
   left: 50%;
-  margin-left: -100px;
+  margin-left: -110px;
   top: 50%;
-  margin-top: -100px;
+  margin-top: -110px;
+  &Big {
+    width: 420px;
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    margin-left: -210px;
+    top: 50%;
+    margin-top: -210px;
+    @media (max-width: 750px) {
+      width: 280px;
+      height: 280px;
+      margin-left: -140px;
+      margin-top: -140px;
+    }
+    @media (max-width: 400px) {
+      width: 220px;
+      height: 220px;
+      margin-left: -110px;
+      margin-top: -110px;
+    }
+  }
 }
 
 .aboutUs_mainText {

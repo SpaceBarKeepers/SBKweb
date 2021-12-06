@@ -7,6 +7,7 @@ import bara from '../../images/photos/bara.webp';
 import kaja from '../../images/photos/kaja.webp';
 import textJSON from '../../texts.json';
 import window from '../../images/graphics/Window.png';
+import us from '../../images/photos/us.webp';
 import './aboutUs.scss';
 import Footer from '../../components/Footer/Footer';
 import { Helmet } from 'react-helmet';
@@ -27,7 +28,10 @@ function AboutUs() {
     <>
       <Helmet>
         <title>SpaceBarKeepers - kdo jsme</title>
-        <meta name="description" content="Vývojářský kolektiv, který vznikl na začátku roku 2021." />
+        <meta
+          name="description"
+          content="Vývojářský kolektiv, který vznikl na začátku roku 2021."
+        />
       </Helmet>
       <Navbar />
       <NavbarMobile />
@@ -92,6 +96,10 @@ function AboutUs() {
                 kareldohnal.io
               </a>
             </div>
+          </div>
+          <div className="aboutUs_windowBig">
+            <img className="window_graphics" src={window} alt="okno" />
+            <img className="window_photoBig" src={us} alt="fotografie Báry" />
           </div>
         </main>
         {/*         <div className="graphics_rocket"></div>
