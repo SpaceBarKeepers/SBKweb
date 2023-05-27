@@ -1,0 +1,25 @@
+{
+  "whatWeDo": "Co děláme",
+  "references": "Reference",
+  "contact": "Kontakt",
+  "hero": {
+    "title": "Vaše vstupenka do světa jedinečných webových prezentací",
+    "primaryBtnText": "Ozvěte se nám",
+    "secondaryBtnText": "Co děláme"
+  },
+  "whatWeDoTitle": "Co děláme",
+  "whatWeDoText": "Svým zákazníkům nabízíme webové prezentace a webové aplikace na klíč od prvotního designu až po nasazení a provozní správu. Využíváme nejnovější technologie a trendy, vyznačujeme se otevřenou komunikací a proaktivním přístupem. Weby nás baví! Pojďme se pobavit i o tom vašem.",
+  "services": {
+    "title": "Co umíme",
+    "design": "Připravíme design webu podle vašich představ",
+    "web": "Vytvoříme webovou prezentaci v React JS, Webflow nebo Wordpressu",
+    "backend": "Nabízíme jednoduchý a funkční redakční systém",
+    "support": "Dokončením webu naše spolupráce nekončí, rádi se vám o web budeme starat dlouhodobě."
+  },
+  "customers": "Spokojení zákazníci",
+  "whoWeAreTitle": "Kdo jsme",
+  "whoWeAreText": "Jsme Bára a Kája a na začátku roku 2021 jsme založili Space Bar Keepers, vývojářský kolektiv zaměřující se na webové aplikace a prezentace. Máme rádi moderní programovací jazyky a technologie a rádi si navrhujeme vlastní designy i technická řešení.",
+  "contactTitle": "Kontakty",
+  "email": "info@spacebarkeepers.com",
+  "phone": "+420 601 563 231"
+}
