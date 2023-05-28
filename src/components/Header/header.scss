@@ -1,0 +1,19 @@
+.header {
+  position: relative;
+  @media (min-width: 700px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo__wrapper {
+  width: 150px;
+  height: auto;
+  & img {
+    max-width: 100%;
+  }
+  @media (min-width: 900px) {
+    width: 200px;
+  }
+}

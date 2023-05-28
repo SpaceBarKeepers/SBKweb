@@ -9,7 +9,7 @@ import servantes from '../../images/servantes.png';
 function Customers() {
   const { text } = useLanguage();
   return (
-    <section className="customers">
+    <section className="customers" id="customers">
       <h2>{text.customers}</h2>
       <div className="customers__wrapper">
         <a

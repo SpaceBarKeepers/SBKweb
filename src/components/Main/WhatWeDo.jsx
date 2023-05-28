@@ -6,7 +6,7 @@ function WhatWeDo() {
   const { text } = useLanguage();
 
   return (
-    <section className="whatWeDo">
+    <section className="whatWeDo" id="whatWeDo">
       <h2>{text.whatWeDoTitle}</h2>
       <p>{text.whatWeDoText}</p>
     </section>

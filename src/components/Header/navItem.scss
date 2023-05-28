@@ -1,0 +1,27 @@
+@import '../../sass/variables';
+.navItem {
+  border-bottom: 1px solid #dae4eb;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  @media (min-width: 700px) {
+    border-bottom: none;
+    padding: 0 $spacing * 3 $spacing $spacing * 3;
+  }
+  &:hover {
+    border-bottom: 2px solid black;
+    font-size: 1.2rem;
+  }
+  & a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 60px;
+    @media (min-width: 1100px) {
+      line-height: $spacing * 3;
+    }
+    &:hover {
+      font-size: 1.2rem;
+    }
+  }
+}
