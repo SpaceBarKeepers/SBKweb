@@ -5,13 +5,13 @@ export default function Hamburger({ menuOpen, setMenuOpen }) {
   return (
     <button
       className="hamburger"
-      menuOpen={menuOpen}
+      menu-open={menuOpen ? "open" : "closed"}
       onClick={() => setMenuOpen(!menuOpen)}
     >
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
+      <span menu-open={menuOpen ? "open" : "closed"}></span>
+      <span menu-open={menuOpen ? "open" : "closed"}></span>
+      <span menu-open={menuOpen ? "open" : "closed"}></span>
+      <span menu-open={menuOpen ? "open" : "closed"}></span>
     </button>
   );
 }

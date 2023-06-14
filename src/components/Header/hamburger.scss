@@ -46,7 +46,7 @@
     &:first-child {
       transform: rotate(0);
 
-      &[menuOpen] {
+      &[menu-open="open"] {
         transform: rotate(45deg);
       }
     }
@@ -55,7 +55,7 @@
       opacity: 1;
       transform: translateX(0);
 
-      &[menuOpen] {
+      &[menu-open="open"] {
         opacity: 0;
         transform: translateX(24px);
       }
@@ -64,7 +64,7 @@
     &:nth-child(3) {
       transform: rotate(0);
 
-      &[menuOpen] {
+      &[menu-open="open"] {
         transform: rotate(-45deg);
       }
     }
