@@ -15,7 +15,7 @@
   width: 100%;
   background-color: white;
   transform: translateX(-100%);
-  &[menuOpen] {
+  &[menu-open="open"] {
     transform: translateX(0);
   }
   @media (min-width: 700px) {

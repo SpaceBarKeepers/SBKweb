@@ -4,112 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2de30331-39d5-451e-9f2f-93e424e55179" name="Changes" comment="Menu fix">
-      <change afterPath="$PROJECT_DIR$/src/contexts/webVariantContext.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Homepage.jsx" afterDir="false" />
+    <list default="true" id="2de30331-39d5-451e-9f2f-93e424e55179" name="Changes" comment="Preparation for redesign + ncu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contacts/Contacts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/components/Contacts/Contacts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contacts/contacts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/components/Contacts/contacts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/components/Footer/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/FooterSome/FooterSome.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/components/Footer/FooterSome/FooterSome.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/components/Footer/footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/components/Header/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/components/Home/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/components/Home/home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Logo/Logo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/components/Logo/Logo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Logo/logo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/components/Logo/logo.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/components/Menu/Menu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menu/menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/components/Menu/menu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MenuButton/MenuButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/components/MenuButton/MenuButton.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MenuButton/menuButton.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/components/MenuButton/menuButton.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/components/Navbar/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/NavbarMobile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/components/Navbar/NavbarMobile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/components/Navbar/navbar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Order/Order.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/components/Order/Order.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Order/order.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/components/Order/order.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/graphics/Light.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/graphics/Light.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/graphics/MobileBar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/graphics/MobileBar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/graphics/Platno.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/graphics/Platno.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/graphics/Projector.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/graphics/Projector.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/graphics/RaketaNochairs.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/graphics/RaketaNochairs.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/graphics/RaketaNochairs0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/graphics/RaketaNochairs0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/graphics/RaketaNosign.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/graphics/RaketaNosign.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/graphics/RaketaNosign.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/graphics/RaketaNosign.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/graphics/RaketaNosign0.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/graphics/RaketaNosign0.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/graphics/Reference.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/graphics/Reference.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/graphics/RocketNoBar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/graphics/RocketNoBar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/graphics/Tabetbar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/graphics/Tabetbar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/graphics/Tablet2.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/graphics/Tablet2.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/graphics/TabletNochairs.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/graphics/TabletNochairs.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/graphics/Window.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/graphics/Window.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/graphics/bar_mobile.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/graphics/bar_mobile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/graphics/bar_mobile_nochairs.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/graphics/bar_mobile_nochairs.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/graphics/blueChairs.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/graphics/blueChairs.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/graphics/chairs_mobile.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/graphics/chairs_mobile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/graphics/chairs_mobile_bck.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/graphics/chairs_mobile_bck.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/graphics/chairsaboutus.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/graphics/chairsaboutus.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/graphics/desktop.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/graphics/desktop.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/graphics/desktopBackground.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/graphics/desktopBackground.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/graphics/desktopBackground.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/graphics/desktopBackground.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/graphics/menuGraphics.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/graphics/menuGraphics.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/graphics/menuGraphics0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/graphics/menuGraphics0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/graphics/menuSign.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/graphics/menuSign.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/graphics/menuSign0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/graphics/menuSign0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/aboutUs.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/icons/aboutUs.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/aboutUsPink.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/icons/aboutUsPink.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/close.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/icons/close.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/contacts.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/icons/contacts.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/contactsPink.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/icons/contactsPink.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/fb.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/icons/fb.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/homePageWhite.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/icons/homePageWhite.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/homePink.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/icons/homePink.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/ig.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/icons/ig.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/left.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/icons/left.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/li.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/icons/li.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/product.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/icons/product.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/productsPink.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/icons/productsPink.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/referenceWhite.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/icons/referenceWhite.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/referencesPink.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/icons/referencesPink.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/right.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/icons/right.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/twitter.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/icons/twitter.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/logo/black_long.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/logo/black_long.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/logo/black_short.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/logo/black_short.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/logo/color_long.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/logo/color_long.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/logo/color_short.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/logo/color_short.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/logo/favicon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/logo/favicon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/logo/white_long.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/logo/white_long.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/logo/white_long.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/logo/white_long.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/logo/white_short.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/logo/white_short.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/logo/white_short.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/logo/white_short.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/photos/bara.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/photos/bara.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/photos/kaja.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/photos/kaja.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/photos/us.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/photos/us.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/references/CV.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/references/CV.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/references/DKCK.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/references/DKCK.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/references/Letokruh.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/references/Letokruh.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/references/skpjirkov.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/images/references/skpjirkov.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AboutUs/AboutUs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/pages/AboutUs/AboutUs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AboutUs/aboutUs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/pages/AboutUs/aboutUs.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ContactPage/ContactPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/pages/ContactPage/ContactPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ContactPage/ContactPage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/pages/ContactPage/ContactPage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/CookiesPolicy/CookiesPolicy.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/pages/CookiesPolicy/CookiesPolicy.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/CookiesPolicy/cookiesPolicy.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/pages/CookiesPolicy/cookiesPolicy.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/InitialDesktop/InitialDesktop.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/pages/InitialDesktop/InitialDesktop.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/InitialDesktop/initialDesktop.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/pages/InitialDesktop/initialDesktop.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/LandingPage/LandingPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/pages/LandingPage/LandingPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/LandingPage/landingPage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/pages/LandingPage/landingPage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/References/ReferenceItem/ReferenceItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/pages/References/ReferenceItem/ReferenceItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/References/ReferenceItem/referenceItem.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/pages/References/ReferenceItem/referenceItem.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/References/References.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/pages/References/References.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/References/references.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/pages/References/references.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/WhatWeDo/WhatWeDo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/pages/WhatWeDo/WhatWeDo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/WhatWeDo/whatWeDo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/oldVersion/pages/WhatWeDo/whatWeDo.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,16 +39,16 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "last_opened_file_path": "/Users/kareldohnal/Documents/Git/SBKweb",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;last_opened_file_path&quot;: &quot;/Users/kareldohnal/Documents/Git/SBKweb&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/oldVersion" />
@@ -195,7 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1633775557988</updated>
       <workItem from="1633775560688" duration="823000" />
-      <workItem from="1679837164304" duration="3737000" />
+      <workItem from="1679837164304" duration="4669000" />
     </task>
     <task id="LOCAL-00001" summary=".idea">
       <created>1633775577513</created>
@@ -211,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633775778624</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Preparation for redesign + ncu">
+      <created>1679841237824</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679841237824</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +134,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value=".idea" />
     <MESSAGE value="Menu fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Menu fix" />
+    <MESSAGE value="Preparation for redesign + ncu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Preparation for redesign + ncu" />
   </component>
 </project>
