@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useLanguage } from '../../contexts/LanguageContext';
 import NavItem from './NavItem';
 import './navigation.scss';
 
 function Navigation({ menuOpen }) {
   const { text } = useLanguage();
+ 
+
   return (
     <nav className="navigation" menuOpen={menuOpen}>
       <ul className="navigation__wrapper">
