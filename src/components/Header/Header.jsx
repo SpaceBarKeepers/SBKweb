@@ -13,13 +13,13 @@ function Header() {
   const { width } = useWindowSize();
   useOnClickOutside(node, () => setMenuOpen(false));
 
-  useEffect(() => {
-    if (width > 900) {
-      setMenuOpen(true);
-    } else {
-      setMenuOpen(false);
-    }
-  }, [width]);
+  // useEffect(() => {
+  //   if (width > 900) {
+  //     setMenuOpen(true);
+  //   } else {
+  //     setMenuOpen(false);
+  //   }
+  // }, [width]);
 
   return (
     <header className="header">

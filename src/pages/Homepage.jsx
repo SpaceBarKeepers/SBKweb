@@ -6,15 +6,15 @@ import Header from '../components/Header/Header';
 import Contact from '../components/Contact/Contact';
 
 function HomePage() {
-  const { changeWebVariantOld } = useWebVariantContext();
-  return (
+/*   const { changeWebVariantOld } = useWebVariantContext();
+ */  return (
     <>
       <Header />
       <Hero />
       <Main />
       <Contact />
-      <button onClick={changeWebVariantOld}>Zpět na starý web</button>
-    </>
+{/*       <button onClick={changeWebVariantOld}>Zpět na starý web</button>
+ */}    </>
   );
 }
 

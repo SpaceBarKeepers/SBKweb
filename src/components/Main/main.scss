@@ -1,0 +1,12 @@
+@import '../../sass/variables.scss';
+
+.main {
+  padding: $spacing * 3;
+
+  @media (min-width: 600px) {
+    padding: $spacing * 5;
+  }
+  @media (min-width: 1000px) {
+    padding: $spacing * 7;
+  }
+}

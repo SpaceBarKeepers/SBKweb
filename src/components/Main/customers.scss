@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: center;
     gap: $spacing * 2;
+
     @media (min-width: 600px) {
       gap: $spacing * 4;
     }
@@ -25,5 +26,11 @@
     & img {
       max-width: 100%;
     }
+  }
+}
+
+#customers {
+  &[id]:target {
+    margin-top: 200px; /* Adjust this value to account for the fixed navigation height */
   }
 }
