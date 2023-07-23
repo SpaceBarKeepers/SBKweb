@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import Navigation from './Navigation';
 import logo from '../../images/logo.png';
-import { useWindowSize } from 'react-use';
 import Hamburger from './Hamburger';
 import { useOnClickOutside } from '../../utils/hooks';
 
@@ -10,20 +9,16 @@ import './header.scss';
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const node = useRef();
-  const { width } = useWindowSize();
   useOnClickOutside(node, () => setMenuOpen(false));
 
-  // useEffect(() => {
-  //   if (width > 900) {
-  //     setMenuOpen(true);
-  //   } else {
-  //     setMenuOpen(false);
-  //   }
-  // }, [width]);
+  const handleLogoClick = () => {
+    window.scrollTo(0, 0);
+    window.location.hash = '';
+  }
 
   return (
     <header className="header">
-      <div className="logo__wrapper">
+      <div className="logo__wrapper" onClick={handleLogoClick}>
         <img src={logo} alt="logo SpaceBarKeepers" />
       </div>
       <div ref={node}>
