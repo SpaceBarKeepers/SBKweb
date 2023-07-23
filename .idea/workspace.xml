@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2de30331-39d5-451e-9f2f-93e424e55179" name="Changes" comment="Navigation, scroll behaviour, scroll padding">
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+    <list default="true" id="2de30331-39d5-451e-9f2f-93e424e55179" name="Changes" comment="click on logo scroll to top">
+      <change beforePath="$PROJECT_DIR$/src/components/Header/NavItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/NavItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/navItem.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/navItem.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +96,7 @@
       <workItem from="1679837164304" duration="4669000" />
       <workItem from="1686763336571" duration="2249000" />
       <workItem from="1689691237797" duration="987000" />
-      <workItem from="1690131118699" duration="2940000" />
+      <workItem from="1690131118699" duration="3251000" />
     </task>
     <task id="LOCAL-00001" summary=".idea">
       <created>1633775577513</created>
@@ -133,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690134316341</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="click on logo scroll to top">
+      <option name="closed" value="true" />
+      <created>1690134499758</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690134499758</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +165,7 @@
     <MESSAGE value="Preparation for redesign + ncu" />
     <MESSAGE value="Hamburger fix" />
     <MESSAGE value="Navigation, scroll behaviour, scroll padding" />
-    <option name="LAST_COMMIT_MESSAGE" value="Navigation, scroll behaviour, scroll padding" />
+    <MESSAGE value="click on logo scroll to top" />
+    <option name="LAST_COMMIT_MESSAGE" value="click on logo scroll to top" />
   </component>
 </project>
