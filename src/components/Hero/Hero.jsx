@@ -2,11 +2,13 @@ import React from 'react';
 import { useLanguage } from '../../contexts/LanguageContext';
 import Button from '../Button/Button';
 import './hero.scss';
-import { useNavigate } from 'react-router-dom';
 
 function Hero() {
   const { text } = useLanguage();
-  let navigate = useNavigate();
+
+  const handleButtonClick = (hash) => () => {
+    document.getElementById(hash).scrollIntoView({ behavior: "smooth" })
+  }
 
   return (
     <section className="hero">
@@ -17,12 +19,12 @@ function Hero() {
       <div className="hero__btnWrapper">
         <Button
           btnText={text.hero.primaryBtnText}
-          onClick={() => navigate('#contact')}
+          onClick={handleButtonClick("contact")}
         />
         <Button
           button="secondary"
           btnText={text.hero.secondaryBtnText}
-          onClick={() => navigate('#whatWeDo')}
+          onClick={handleButtonClick("whatWeDo")}
         />
       </div>
     </section>

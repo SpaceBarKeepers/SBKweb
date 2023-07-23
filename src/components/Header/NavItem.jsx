@@ -1,10 +1,10 @@
 import React from 'react';
 import './navItem.scss';
 
-function NavItem({ linkRoute, navItemName }) {
+function NavItem({ linkHash, navItemName }) {
   return (
     <li className="navItem">
-      <a href={linkRoute}>{navItemName}</a>
+      <a href={linkHash}>{navItemName}</a>
     </li>
   );
 }

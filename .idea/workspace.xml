@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2de30331-39d5-451e-9f2f-93e424e55179" name="Changes" comment="Preparation for redesign + ncu">
+    <list default="true" id="2de30331-39d5-451e-9f2f-93e424e55179" name="Changes" comment="Hamburger fix">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/NavItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/NavItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Navigation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Navigation.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/navItem.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/navItem.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +47,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;git-widget-placeholder&quot;: &quot;redesign&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/kareldohnal/Documents/Git/SBKweb&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -71,7 +78,7 @@
       <scripts>
         <script value="start" />
       </scripts>
-      <node-interpreter value="project" />
+      <node-interpreter value="$USER_HOME$/.nvm/versions/node/v16.19.1/bin/node" />
       <envs />
       <method v="2" />
     </configuration>
@@ -92,6 +99,9 @@
       <updated>1633775557988</updated>
       <workItem from="1633775560688" duration="823000" />
       <workItem from="1679837164304" duration="4669000" />
+      <workItem from="1686763336571" duration="2249000" />
+      <workItem from="1689691237797" duration="987000" />
+      <workItem from="1690131118699" duration="2607000" />
     </task>
     <task id="LOCAL-00001" summary=".idea">
       <created>1633775577513</created>
@@ -114,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679841237824</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Hamburger fix">
+      <created>1686766727070</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686766727070</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +152,7 @@
     <MESSAGE value=".idea" />
     <MESSAGE value="Menu fix" />
     <MESSAGE value="Preparation for redesign + ncu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Preparation for redesign + ncu" />
+    <MESSAGE value="Hamburger fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hamburger fix" />
   </component>
 </project>

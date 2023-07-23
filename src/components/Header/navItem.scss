@@ -18,7 +18,7 @@
       background: url('../../images/vykroj2.png');
       background-repeat: space;
       background-size: contain;
-      bottom: 0px;
+      bottom: 0;
       right: -$spacing * 2;
       width: 150px;
       height: 6px;
@@ -32,6 +32,8 @@
   }
 
   & a {
+    background: none;
+    border: 0;
     text-decoration: none;
     color: inherit;
     font-size: 19px;
