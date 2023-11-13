@@ -1,0 +1,33 @@
+@import '../../sass/variables';
+.whoWeAre {
+  &__flex {
+    @media (min-width: 746px) {
+      display: flex;
+      align-items: center;
+    }
+    & img {
+      max-width: 130px;
+      margin: 0 $spacing * 2 0 0;
+      @media (min-width: 746px) {
+        margin: 0;
+      }
+      @media (min-width: 1000px) {
+        max-width: 200px;
+      }
+    }
+    & p {
+      @media (min-width: 746px) {
+        padding: 0 $spacing * 3;
+        text-align: center;
+      }
+      @media (min-width: 1200px) {
+        padding: 0 $spacing * 6;
+      }
+    }
+  }
+  &__first {
+    @media (min-width: 746px) {
+      order: -1;
+    }
+  }
+}

@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2de30331-39d5-451e-9f2f-93e424e55179" name="Changes" comment="">
+    <list default="true" id="2de30331-39d5-451e-9f2f-93e424e55179" name="Changes" comment="NavItem fix (hover, click on li)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/graphics/Window.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/graphics/Window.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AboutUs/AboutUs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AboutUs/AboutUs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AboutUs/aboutUs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AboutUs/aboutUs.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/NavItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/NavItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Navigation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Navigation.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/navItem.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/navItem.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contexts/LanguageContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/LanguageContext.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/languages/czech.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/languages/czech.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/languages/english.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/languages/english.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +37,12 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="1zGXe5BjYQ43E06jRvAFkhk4oxA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -38,12 +51,21 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="vue.rearranger.settings.migration" value="true" />
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;git-widget-placeholder&quot;: &quot;redesign&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kareldohnal/Documents/Git/SBKweb&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/oldVersion" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.build">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -62,14 +84,14 @@
       <scripts>
         <script value="start" />
       </scripts>
-      <node-interpreter value="project" />
+      <node-interpreter value="$USER_HOME$/.nvm/versions/node/v16.19.1/bin/node" />
       <envs />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -82,6 +104,12 @@
       <option name="presentableId" value="Default" />
       <updated>1633775557988</updated>
       <workItem from="1633775560688" duration="823000" />
+      <workItem from="1679837164304" duration="4669000" />
+      <workItem from="1686763336571" duration="2249000" />
+      <workItem from="1689691237797" duration="987000" />
+      <workItem from="1690131118699" duration="4203000" />
+      <workItem from="1699866331153" duration="8855000" />
+      <workItem from="1699881004907" duration="970000" />
     </task>
     <task id="LOCAL-00001" summary=".idea">
       <created>1633775577513</created>
@@ -97,7 +125,45 @@
       <option name="project" value="LOCAL" />
       <updated>1633775778624</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Preparation for redesign + ncu">
+      <created>1679841237824</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679841237824</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Hamburger fix">
+      <created>1686766727070</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686766727070</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Navigation, scroll behaviour, scroll padding">
+      <option name="closed" value="true" />
+      <created>1690134316341</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1690134316341</updated>
+    </task>
+    <task id="LOCAL-00006" summary="click on logo scroll to top">
+      <option name="closed" value="true" />
+      <created>1690134499758</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690134499758</updated>
+    </task>
+    <task id="LOCAL-00007" summary="NavItem fix (hover, click on li)">
+      <option name="closed" value="true" />
+      <created>1690134891474</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1690134891474</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +183,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value=".idea" />
     <MESSAGE value="Menu fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Menu fix" />
+    <MESSAGE value="Preparation for redesign + ncu" />
+    <MESSAGE value="Hamburger fix" />
+    <MESSAGE value="Navigation, scroll behaviour, scroll padding" />
+    <MESSAGE value="click on logo scroll to top" />
+    <MESSAGE value="NavItem fix (hover, click on li)" />
+    <option name="LAST_COMMIT_MESSAGE" value="NavItem fix (hover, click on li)" />
   </component>
 </project>

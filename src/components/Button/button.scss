@@ -1,0 +1,30 @@
+@import '../../sass/variables';
+
+.button {
+  width: 230px;
+  font-family: 'Raleway', sans-serif;
+  background: #100107;
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: $spacing * 2 $spacing * 3;
+  cursor: pointer;
+  border: 4px solid transparent;
+  &:hover {
+    background: white;
+    color: #100107;
+    border: 4px solid #100107;
+    font-weight: 500;
+  }
+}
+
+.secondary {
+  background: #e9e9e9;
+  color: black;
+  &:hover {
+    background: #e9e9e9;
+    color: #100107;
+    border: 4px solid #a9a9a9;
+    font-weight: 500;
+  }
+}

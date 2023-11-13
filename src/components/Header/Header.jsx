@@ -1,20 +1,32 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import logo from '../../images/logo/white_long.png';
+import React, { useState, useRef } from 'react';
+import Navigation from './Navigation';
+import logo from '../../images/logo.png';
+import Hamburger from './Hamburger';
+import { useOnClickOutside } from '../../utils/hooks';
+
 import './header.scss';
 
-export const Header = ({ logoType }) => {
+function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const node = useRef();
+  useOnClickOutside(node, () => setMenuOpen(false));
+
+  const handleLogoClick = () => {
+    window.scrollTo(0, 0);
+    window.location.hash = '';
+  }
+
   return (
-    <div className="header_div_mobile">
-      <Link to="/">
-        <div className="logoMenu_div">
-          {<img
-            src={logo}
-            alt="logo spacebarkeepers"
-            className={logoType === 'homepage' ? 'logoHomepage' : 'logo'}
-          />}
-        </div>
-      </Link>
-    </div>
+    <header className="header">
+      <div className="logo__wrapper" onClick={handleLogoClick}>
+        <img src={logo} alt="logo SpaceBarKeepers" />
+      </div>
+      <div ref={node}>
+        <Hamburger menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <Navigation menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      </div>
+    </header>
   );
-};
+}
+
+export default Header;

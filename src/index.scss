@@ -1,50 +1,44 @@
-@import './sass/colors.scss';
+@import './sass/variables';
 
-body,
 html {
-  margin: 0 auto;
-  padding: 0;
-  position: relative;
-  overflow: scroll;
-  overflow-x: hidden;
-
-  ::-webkit-scrollbar {
-    width: 0;
-    background: transparent;
-  }
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
 body {
-  background: linear-gradient(180deg, $purple 80%, $raspberry 80%);
-  overflow-y: hidden;
-  @media (min-width: 500px) {
-    background: none;
-  }
-  color: $white;
-  font-family: 'Raleway', sans-serif;
-
-  @media (min-width: 500px) {
-    background-color: $extraDarkBlue;
-  }
-  @media (min-width: 1100px) {
-    background-image: url('./images/graphics/desktopBackground.webp');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    min-width: 100vw;
-    min-height: 100vh;
-  }
-}
-
-h1,
-h2,
-h3 {
-  font-family: 'Encode Sans Expanded', sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  max-width: 1200px;
 }
 
 h1 {
+  font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
   text-transform: uppercase;
-  color: $shelf;
+  font-weight: 500;
+  font-size: 26px;
+  @media (min-width: 500px) {
+    font-size: 30px;
+    padding-bottom: $spacing * 2;
+  }
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+section {
+  padding: $spacing * 2 0;
+  @media (min-width: 600px) {
+    padding: $spacing * 3 0;
+  }
+  @media (min-width: 1000px) {
+    padding: $spacing * 4 0;
+  }
 }
 
 /* stylování Cookies lišty */

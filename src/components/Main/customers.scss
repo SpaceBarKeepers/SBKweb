@@ -1,0 +1,36 @@
+@import '../../sass/variables.scss';
+
+.customers {
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: $spacing * 2;
+
+    @media (min-width: 600px) {
+      gap: $spacing * 4;
+    }
+    @media (min-width: 1072px) {
+      gap: $spacing * 10;
+    }
+  }
+  &__logo {
+    display: block;
+    text-align: center;
+    width: 200px;
+    cursor: pointer;
+    @media (min-width: 738px) {
+      width: 180px;
+    }
+    & img {
+      max-width: 100%;
+    }
+  }
+}
+
+#customers {
+  &[id]:target {
+    margin-top: 200px; /* Adjust this value to account for the fixed navigation height */
+  }
+}

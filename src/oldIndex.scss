@@ -1,0 +1,75 @@
+@import './sass/colors.scss';
+
+body,
+html {
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  overflow: scroll;
+  overflow-x: hidden;
+
+  ::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+}
+
+body {
+  background: linear-gradient(180deg, $purple 80%, $raspberry 80%);
+  overflow-y: hidden;
+  @media (min-width: 500px) {
+    background: none;
+  }
+  color: $white;
+  font-family: 'Raleway', sans-serif;
+
+  @media (min-width: 500px) {
+    background-color: $extraDarkBlue;
+  }
+  @media (min-width: 1100px) {
+    background-image: url('oldVersion/images/graphics/desktopBackground.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: $shelf;
+}
+
+/* stylování Cookies lišty */
+
+.cookieconsent-com---nb-simple {
+  margin: 0 auto !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: 0 !important;
+  bottom: auto !important;
+  @media (min-width: 500px) {
+    max-width: 100% !important;
+    margin: 0 auto;
+    bottom: 0 !important;
+    left: 0 !important;
+    top: auto !important;
+  }
+}
+.cookieconsent-com---nb {
+  font-size: 14px !important;
+}
+.cookieconsent-com---nb .cc-nb-main-container {
+  padding: 1rem !important;
+
+  @media (min-width: 1100px) {
+    padding: 2rem !important;
+  }
+}

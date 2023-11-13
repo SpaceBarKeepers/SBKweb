@@ -1,0 +1,26 @@
+{
+  "whatWeDo": "What We Do",
+  "references": "References",
+  "contact": "Contact",
+  "hero": {
+    "title": "Your ticket to the world of unique web presentations",
+    "primaryBtnText": "Get in touch",
+    "secondaryBtnText": "What We Do"
+  },
+  "whatWeDoTitle": "What We Do",
+  "whatWeDoText": "We offer our customers web presentations and web applications from initial design to deployment and operational management. We utilize the latest technologies and trends, distinguish ourselves with open communication and a proactive approach. We love websites! Let's talk about yours and have some fun.",
+  "services": {
+    "title": "What We Can Do",
+    "design": "Create website design according to your vision",
+    "web": "Develop a web presentation in React JS, Webflow, or Wordpress",
+    "backend": "Provide a simple and functional content management system",
+    "support": "Our collaboration doesn't end with the completion of the website; we are happy to take care of your website in the long term."
+  },
+  "customers": "Satisfied Customers",
+  "whoWeAreTitle": "Who We Are",
+  "whoWeAreText": "We are Bára and Kája, and in early 2021, we founded Space Bar Keepers, a development collective focusing on web applications and presentations. We love modern programming languages and technologies, and we enjoy designing our own layouts and technical solutions.",
+  "contactTitle": "Contacts",
+  "email": "info@spacebarkeepers.com",
+  "phone": "+420 601 563 231",
+  "switchLanguage": "CZ"
+}

@@ -1,19 +1,22 @@
 import React, { useEffect, useState } from 'react';
-import { Route, Switch, useLocation } from 'react-router-dom';
+import {Route, Routes, useLocation} from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
-import { LandingPage } from './pages/LandingPage/LandingPage';
-import WhatWeDo from './pages/WhatWeDo/WhatWeDo';
-import References from './pages/References/References';
-import AboutUs from './pages/AboutUs/AboutUs';
-import ContactPage from './pages/ContactPage/ContactPage';
-import InitialDesktop from './pages/InitialDesktop/InitialDesktop';
+import { LandingPage } from './oldVersion/pages/LandingPage/LandingPage';
+import WhatWeDo from './oldVersion/pages/WhatWeDo/WhatWeDo';
+import References from './oldVersion/pages/References/References';
+import AboutUs from './oldVersion/pages/AboutUs/AboutUs';
+import ContactPage from './oldVersion/pages/ContactPage/ContactPage';
+import InitialDesktop from './oldVersion/pages/InitialDesktop/InitialDesktop';
 import { BrowserRouter } from 'react-router-dom';
-import { Contacts } from './components/Contacts/Contacts';
-import { CookiesPolicy } from './pages/CookiesPolicy/CookiesPolicy';
+import { Contacts } from './oldVersion/components/Contacts/Contacts';
+import { CookiesPolicy } from './oldVersion/pages/CookiesPolicy/CookiesPolicy';
+import {useWebVariantContext} from "./contexts/webVariantContext";
+import Homepage from "./pages/Homepage";
 
 function App() {
   const [wideScreen, setWideScreen] = useState(false);
   const [isSafari, setIsSafari] = useState(false);
+  const {oldVariant} = useWebVariantContext();
   const ScrollToTop = () => {
     const { pathname } = useLocation();
 
@@ -45,36 +48,23 @@ function App() {
   };
 
   return (
-    <AnimatePresence exitBeforeEnter>
+    <AnimatePresence mode={"wait"}>
       <BrowserRouter>
         <ScrollToTop />
-
-        <Switch>
-          <Route path="/onas">
-            <AboutUs />
-          </Route>
-          <Route path="/codelame">
-            <WhatWeDo />
-          </Route>
-          <Route path="/reference">
-            <References />
-          </Route>
-          <Route path="/kontakty/info">
-            <Contacts />
-          </Route>
-          <Route path="/kontakty">
-            <ContactPage />
-          </Route>
-          <Route path="/home">
-            <InitialDesktop />
-          </Route>
-          <Route path="/cookies-policy">
-            <CookiesPolicy />
-          </Route>
-          <Route path="/">
-            {wideScreen && !isSafari ? <InitialDesktop /> : <LandingPage />}
-          </Route>
-        </Switch>
+        {oldVariant ? (<Routes>
+          <Route path="/onas" element={<AboutUs/>}/>
+          <Route path="/codelame" element={<WhatWeDo/>}/>
+          <Route path="/reference" element={<References/>}/>
+          <Route path="/kontakty/info" element={<Contacts/>}/>
+          <Route path="/kontakty" element={<ContactPage/>}/>
+          <Route path="/home" element={<InitialDesktop/>}/>
+          <Route path="/cookies-policy" element={<CookiesPolicy/>}/>
+          <Route path="/*" element={wideScreen && !isSafari ? <InitialDesktop/> : <LandingPage/>}/>
+        </Routes>)
+          : (<Routes>
+            <Route path="/*" element={<Homepage/>}/>
+            </Routes>)
+        }
       </BrowserRouter>
     </AnimatePresence>
   );
