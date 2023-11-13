@@ -1,10 +1,12 @@
 import React from 'react';
 import './navItem.scss';
 
-function NavItem({ linkHash, navItemName }) {
+function NavItem({ linkHash, navItemName, handleClickCustom }) {
 
   const handleClick = (hash) => () => {
-    window.location.hash = hash;
+    if (handleClickCustom) {
+      handleClickCustom();
+    } else window.location.hash = hash;
   }
 
   return (

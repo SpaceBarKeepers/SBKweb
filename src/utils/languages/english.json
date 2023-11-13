@@ -1,25 +1,26 @@
 {
-  "whatWeDo": "Co děláme",
-  "references": "Reference",
-  "contact": "Kontakt",
+  "whatWeDo": "What We Do",
+  "references": "References",
+  "contact": "Contact",
   "hero": {
-    "title": "Vaše vstupenka do světa jedinečných webových prezentací",
-    "primaryBtnText": "Ozvěte se nám",
-    "secondaryBtnText": "Co děláme"
+    "title": "Your ticket to the world of unique web presentations",
+    "primaryBtnText": "Get in touch",
+    "secondaryBtnText": "What We Do"
   },
-  "whatWeDoTitle": "Co děláme",
-  "whatWeDoText": "Svým zákazníkům nabízíme webové prezentace a webové aplikace na klíč od prvotního designu až po nasazení a provozní správu. Využíváme nejnovější technologie a trendy, vyznačujeme se otevřenou komunikací a proaktivním přístupem. Weby nás baví! Pojďme se pobavit i o tom vašem.",
+  "whatWeDoTitle": "What We Do",
+  "whatWeDoText": "We offer our customers web presentations and web applications from initial design to deployment and operational management. We utilize the latest technologies and trends, distinguish ourselves with open communication and a proactive approach. We love websites! Let's talk about yours and have some fun.",
   "services": {
-    "title": "Co umíme",
-    "design": "Připravíme design webu podle vašich představ",
-    "web": "Vytvoříme webovou prezentaci v React JS, Webflow nebo Wordpressu",
-    "backend": "Nabízíme jednoduchý a funkční redakční systém",
-    "support": "Dokončením webu naše spolupráce nekončí, rádi se vám o web budeme starat dlouhodobě."
+    "title": "What We Can Do",
+    "design": "Create website design according to your vision",
+    "web": "Develop a web presentation in React JS, Webflow, or Wordpress",
+    "backend": "Provide a simple and functional content management system",
+    "support": "Our collaboration doesn't end with the completion of the website; we are happy to take care of your website in the long term."
   },
-  "customers": "Spokojení zákazníci",
-  "whoWeAreTitle": "Kdo jsme",
-  "whoWeAreText": "Jsme Bára a Kája a na začátku roku 2021 jsme založili Space Bar Keepers, vývojářský kolektiv zaměřující se na webové aplikace a prezentace. Máme rádi moderní programovací jazyky a technologie a rádi si navrhujeme vlastní designy i technická řešení.",
-  "contactTitle": "Kontakty",
+  "customers": "Satisfied Customers",
+  "whoWeAreTitle": "Who We Are",
+  "whoWeAreText": "We are Bára and Kája, and in early 2021, we founded Space Bar Keepers, a development collective focusing on web applications and presentations. We love modern programming languages and technologies, and we enjoy designing our own layouts and technical solutions.",
+  "contactTitle": "Contacts",
   "email": "info@spacebarkeepers.com",
-  "phone": "+420 601 563 231"
+  "phone": "+420 601 563 231",
+  "switchLanguage": "CZ"
 }

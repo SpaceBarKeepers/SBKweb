@@ -70,7 +70,7 @@
 <script type="text/javascript" src="//www.cookieconsent.com/releases/4.0.0/cookie-consent.js" charset="UTF-8"></script>
 <script type="text/javascript" charset="UTF-8">
 document.addEventListener('DOMContentLoaded', function () {
-cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"dark","language":"cs","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"website_name":"spacebarkeepers.com","open_preferences_center_selector":"#changePreferences","website_privacy_policy_url":"https://spacebarkeepers.com/cookies-policy"});
+cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"dark","language":navigator.language.toLowerCase().includes("cs") ? "cs" : "en","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"website_name":"spacebarkeepers.com","open_preferences_center_selector":"#changePreferences","website_privacy_policy_url":"https://spacebarkeepers.com/cookies-policy"});
 });
 </script>
 <!-- Tracking -->
