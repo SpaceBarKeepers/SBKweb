@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2de30331-39d5-451e-9f2f-93e424e55179" name="Changes" comment="NavItem fix (hover, click on li)">
+    <list default="true" id="2de30331-39d5-451e-9f2f-93e424e55179" name="Changes" comment="Oprava List chyb">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/NavItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/NavItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Navigation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Navigation.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/navItem.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/navItem.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contexts/LanguageContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/LanguageContext.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/languages/czech.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/languages/czech.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/languages/english.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/languages/english.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +15,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="oprava-chyb" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,6 +27,13 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="main" />
+      </list>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -53,7 +51,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;git-widget-placeholder&quot;: &quot;redesign&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/kareldohnal/Documents/Git/SBKweb&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -90,6 +88,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.build" />
       </list>
@@ -163,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690134891474</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Oprava List chyb">
+      <option name="closed" value="true" />
+      <created>1699896279937</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1699896279937</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +196,7 @@
     <MESSAGE value="Navigation, scroll behaviour, scroll padding" />
     <MESSAGE value="click on logo scroll to top" />
     <MESSAGE value="NavItem fix (hover, click on li)" />
-    <option name="LAST_COMMIT_MESSAGE" value="NavItem fix (hover, click on li)" />
+    <MESSAGE value="Oprava List chyb" />
+    <option name="LAST_COMMIT_MESSAGE" value="Oprava List chyb" />
   </component>
 </project>
