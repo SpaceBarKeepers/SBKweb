@@ -18,6 +18,12 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
       
       - name: Upload from build to Wedos via FTP
         uses: airvzxf/ftp-deployment-action@latest
