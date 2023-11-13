@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import './contacts.scss';
 import textJSON from '../../../texts.json';
 import Footer from '../Footer/Footer';

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import astronaut from '../../images/icons/aboutUs.png';
 import astronautPink from '../../images/icons/aboutUsPink.png'
 import home from '../../images/icons/homePageWhite.png';

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { motion, useAnimation } from 'framer-motion';
+import { useAnimation } from 'framer-motion';
 import './referenceItem.scss';
 import { useInView } from 'react-intersection-observer';
 
@@ -16,14 +16,14 @@ function ReferenceItem(props) {
     }
   }, [controls, inView]);
 
-  const referenceItemVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      backgroundColor: 'rgba(236, 212, 68, 0.3)',
-      transition: { duration: 1.1, delay: 1.5 },
-    },
-  };
+  // const referenceItemVariants = {
+  //   hidden: { opacity: 0 },
+  //   visible: {
+  //     opacity: 1,
+  //     backgroundColor: 'rgba(236, 212, 68, 0.3)',
+  //     transition: { duration: 1.1, delay: 1.5 },
+  //   },
+  // };
 
   return (
     <a
