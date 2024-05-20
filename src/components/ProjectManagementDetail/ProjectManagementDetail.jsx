@@ -32,7 +32,7 @@ const ProjectManagementDetail = ({project}) => {
                         {module?.tasks?.length && module.tasks.map((task) => (
                             <tr key={task.name}>
                                 <td className={"submodule_taskName taskName"}>{task.name}</td>
-                                <td className={"taskState"}>{task.state}</td>
+                                <td className={"taskState"}>{<StatusIcon status={task.state}/>}</td>
                                 <td>{task.finishedAt}</td>
                             </tr>
                         ))}
