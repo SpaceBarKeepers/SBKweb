@@ -1,0 +1,61 @@
+.pmDetail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+
+    @media (max-width: 600px) {
+        padding: 5px;
+    }
+
+    .projectHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .projectState {
+        padding-right: 40px;
+
+        @media (max-width: 600px) {
+            padding-right: 10px;
+        }
+        svg {
+            height: 40px;
+        }
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: #e9e9e9;
+    }
+    tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    td {
+        text-align: center;
+        padding: 4px 0;
+    }
+
+    .taskName {
+        text-align: start;
+        padding-left: 8px;
+    }
+
+    .taskState svg {
+        height: 20px;
+    }
+
+    .module {
+        &_taskRow {
+
+            font-weight: bold;
+        }
+    }
+
+    .submodule {
+        &_taskName {
+            padding-left: 16px;
+        }
+    }
+}

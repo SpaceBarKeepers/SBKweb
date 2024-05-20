@@ -1,0 +1,118 @@
+{
+    "projectName": "Civic Tech Report",
+    "customerName": "Participation Factory s.r.o.",
+    "state": "working",
+    "modules": [
+        {
+            "name": "Design",
+            "state": "done",
+            "finishedAt": "9. 5.2024"
+        },
+        {
+            "name": "Předobjednávkový frontend",
+            "state": "working",
+            "finishedAt": "3. 6. 2024",
+            "tasks": [
+                {
+                    "name": "Vývoj",
+                    "state": "working",
+                    "finishedAt": "3. 6. 2024"
+                },
+                {
+                    "name": "Připomínkový/předávací call",
+                    "state": "queue",
+                    "finishedAt": "???"
+                },
+                {
+                    "name": "Nasazení do produkce",
+                    "state": "queue",
+                    "finishedAt": "???"
+                }
+            ]
+        },
+        {
+            "name": "Backend implementace",
+            "state": "working",
+            "finishedAt": "25. 6.2024",
+            "tasks": [
+                {
+                    "name": "Design datové struktury",
+                    "state": "done",
+                    "finishedAt": "9. 5. 2024"
+                },
+                {
+                    "name": "Autentizace / bezpečnostní vrstva",
+                    "state": "done",
+                    "finishedAt": "20. 1. 2024"
+                },
+                {
+                    "name": "Návrh API struktury",
+                    "state": "working",
+                    "finishedAt": "4. 6. 2024"
+                },
+                {
+                    "name": "Implementace API",
+                    "state": "queue",
+                    "finishedAt": "12. 6. 2024"
+                },
+                {
+                    "name": "Propojení S3 storage",
+                    "state": "queue",
+                    "finishedAt": "12. 6. 2024"
+                },
+                {
+                    "name": "Kompletace BE",
+                    "state": "queue",
+                    "finishedAt": "25. 6. 2024"
+                }
+            ]
+        },
+        {
+            "name": "Frontend implementace",
+            "state": "queue",
+            "finishedAt": "30. 6.2024",
+            "tasks": [
+                {
+                    "name": "Implementace přihlašování uživatelů",
+                    "state": "done",
+                    "finishedAt": "9. 5. 2024"
+                },
+                {
+                    "name": "Kostra celé aplikace",
+                    "state": "queue",
+                    "finishedAt": "9. 6. 2024"
+                },
+                {
+                    "name": "Katalog",
+                    "state": "queue",
+                    "finishedAt": "19. 6. 2024"
+                },
+                {
+                    "name": "News, Knowledge Base",
+                    "state": "queue",
+                    "finishedAt": "23. 6. 2024"
+                },
+                {
+                    "name": "Rozcestník, trends",
+                    "state": "queue",
+                    "finishedAt": "27. 6. 2024"
+                },
+                {
+                    "name": "Kompletace FE",
+                    "state": "queue",
+                    "finishedAt": "30. 6. 2024"
+                },
+                {
+                    "name": "Připomínkový/předávací call",
+                    "state": "queue",
+                    "finishedAt": "???"
+                },
+                {
+                    "name": "Nasazení do produkce",
+                    "state": "queue",
+                    "finishedAt": "???"
+                }
+            ]
+        }
+    ]
+}
