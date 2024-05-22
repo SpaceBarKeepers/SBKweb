@@ -1,51 +1,54 @@
-import React from "react";
+import React, {useCallback, useEffect, useState} from "react";
 import "./projectManagementDetail.scss"
 
 const ProjectManagementDetail = ({project}) => {
+    const [pinOk, setPinOk] = useState(false)
+
     return (
-        <div className={"pmDetail"}>
-            <div className={"projectHeader"}>
-                <div>
-                    {project.projectName && <h1>{project.projectName}</h1>}
-                    {project.customerName && <h3>Objednatel: {project.customerName}</h3>}
+        pinOk
+            ? <div className={"pmDetail"}>
+                <div className={"projectHeader"}>
+                    <div>
+                        {project.projectName && <h1>{project.projectName}</h1>}
+                        {project.customerName && <h3>Objednatel: {project.customerName}</h3>}
+                    </div>
+                    <div className={"projectState"}>
+                        {project.state && <StatusIcon status={project.state}/>}
+                    </div>
                 </div>
-                <div className={"projectState"}>
-                    {project.state && <StatusIcon status={project.state}/>}
-                </div>
-            </div>
-            <table>
-                <thead>
-                <tr>
-                    <th>Task/subtask</th>
-                    <th>Status</th>
-                    <th>Předpokládaný termín</th>
-                </tr>
-                </thead>
-                <tbody>
-                {project?.modules?.length && project.modules.map((module) => (
-                    <React.Fragment key={module.name}>
-                        <tr className={"module_taskRow"}>
-                            <td className={"taskName"}>{module.name}</td>
-                            <td className={"taskState"}>{<StatusIcon status={module.state}/>}</td>
-                            <td>{module.finishedAt}</td>
-                        </tr>
-                        {module?.tasks?.length && module.tasks.map((task) => (
-                            <tr key={task.name}>
-                                <td className={"submodule_taskName taskName"}>{task.name}</td>
-                                <td className={"taskState"}>{<StatusIcon status={task.state}/>}</td>
-                                <td>{task.finishedAt}</td>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Task/subtask</th>
+                        <th>Status</th>
+                        <th>Předpokládaný termín</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {project?.modules?.length && project.modules.map((module) => (
+                        <React.Fragment key={module.name}>
+                            <tr className={"module_taskRow"}>
+                                <td className={"taskName"}>{module.name}</td>
+                                <td className={"taskState"}>{<StatusIcon status={module.state}/>}</td>
+                                <td>{module.finishedAt}</td>
                             </tr>
-                        ))}
-                    </React.Fragment>
-                ))}
-                </tbody>
-            </table>
-        </div>
+                            {module?.tasks?.length && module.tasks.map((task) => (
+                                <tr key={task.name}>
+                                    <td className={"submodule_taskName taskName"}>{task.name}</td>
+                                    <td className={"taskState"}>{<StatusIcon status={task.state}/>}</td>
+                                    <td>{task.finishedAt}</td>
+                                </tr>
+                            ))}
+                        </React.Fragment>
+                    ))}
+                    </tbody>
+                </table>
+            </div>
+            : <Pin pin={project.ico} setPinOk={setPinOk}/>
     );
 }
 
 const StatusIcon = ({status}) => {
-    console.log(status);
     return (
         <>
             {status === "done" &&
@@ -71,6 +74,90 @@ const StatusIcon = ({status}) => {
             }
         </>
     );
+}
+
+const Pin = ({pin, setPinOk}) => {
+    const [input, setInput] = useState("")
+    const handleFocus = (e) => {
+        e.target.select()
+    }
+
+    const handleKeyDown = (e) => {
+        if (
+            e.key !== "1" &&
+            e.key !== "2" &&
+            e.key !== "3" &&
+            e.key !== "4" &&
+            e.key !== "5" &&
+            e.key !== "6" &&
+            e.key !== "7" &&
+            e.key !== "8" &&
+            e.key !== "9" &&
+            e.key !== "0"
+        ) {
+            e.preventDefault()
+        }
+        if (e.key === "Backspace") {
+            if (e.target.id !== "pin0") {
+                setInput(prev => prev.slice(0, -1))
+                e.target.previousElementSibling.value = ''
+                e.target.previousElementSibling.focus()
+            }
+        }
+    }
+
+    const handleSubmit = useCallback(() => {
+        if (input === String(pin)) {
+            setPinOk(true)
+        } else {
+            setInput("")
+            const inputs = document.getElementsByClassName("pinInput")
+            for (let i = 0; i < inputs.length; i++) {
+                inputs[i].value = '';
+            }
+            document.querySelector(".pinInput").focus()
+        }
+    }, [input, pin, setPinOk]);
+
+    useEffect(() => {
+        if (input.length === pin.length) handleSubmit()
+    }, [input, pin, handleSubmit]);
+
+
+    const handleChange = (e) => {
+        if (e.target.value.length > 0) {
+            setInput(prev => prev + e.target.value)
+            if (e.target.id.slice(-1) !== String(pin.length - 1)) {
+                e.target.nextElementSibling.focus()
+            }
+        }
+    }
+
+    return (
+        <div className={"pinContainer"}>
+            <h1>Zadejte PIN:</h1>
+            <div className={"pinInputs"}>
+                {
+                    Array.from(pin).map((pin, index) => (
+                        <input
+                            className={"pinInput"}
+                            autoComplete="off"
+                            maxLength={1}
+                            type={"password"}
+                            inputMode={"numeric"}
+                            pattern={"^[0-9]$"}
+                            key={index}
+                            id={`pin${index}`}
+                            autoFocus={index === 0}
+                            onChange={handleChange}
+                            onFocus={handleFocus}
+                            onKeyDown={handleKeyDown}
+                        />
+                    ))
+                }
+            </div>
+        </div>
+    )
 }
 
 export default ProjectManagementDetail;
