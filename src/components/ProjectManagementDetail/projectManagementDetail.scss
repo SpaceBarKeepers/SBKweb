@@ -50,7 +50,6 @@
 
   .module {
     &_taskRow {
-
       font-weight: bold;
     }
   }
@@ -89,5 +88,13 @@
         width: 3rem;
       }
     }
+  }
+}
+
+.legend {
+  display: flex;
+
+  &_iconWrapper {
+    display: flex;
   }
 }
